@@ -1,0 +1,277 @@
+/*
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    background-color: darkorange;
+    grid-template-areas: 
+    "aba fundo fundo"
+    "aba fundo fundo"
+    "aba fundo fundo"
+    
+    
+    
+    ;
+    
+}
+
+.welcome{
+
+    width: 10vw;
+    height: 100vh;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: darkorange;
+    color: white;
+    grid-area: fundo;
+}
+
+.login{
+
+    width: 75%;
+    height: 150vh;
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-row: 1/2;
+    background-color: white;
+    padding-left: 30px;
+    padding: 10px;
+    border-right-style: solid;
+    border-color: white;
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 800px;
+    /* border-radius: 1000px; */
+    box-shadow: 1px 0px 20px 1px black;
+    grid-area: aba;
+}
+
+.scook{
+
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-apres{
+
+    width: 50%;
+    display: grid;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  
+}
+
+.log-sig{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.botao-log-sig{
+
+    background-color: greenyellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border-color: greenyellow;
+    border-style: solid;
+    border-width: 10px;
+    cursor: pointer;
+}
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #EAEDED;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.container{
+    padding-top: 130px;
+    padding-bottom: 150px;
+    max-width: 950px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.left{
+    margin-bottom: 50px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -170px;
+}
+
+.left p{
+    font-size: 20px;
+}
+
+.logo{
+    display: block;
+    max-width: 100%;
+    height: 150px;
+}
+
+/*Cores dos circulos */
+
+.circle-green{
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 100%;
+    height: 100%;
+    background: #42B72A;
+    clip-path: circle(600px at left);
+}
+
+.circle-orange{
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 100%;
+    height: 100%;
+    background: #FF9331;
+    clip-path: circle(600px at left);
+}
+
+/* estilização do form */
+
+form{
+    padding: 15px 15px 24px 15px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid #DDDFE2;
+    outline: none;
+}
+
+input:focus{
+    border-color: #1B74E4;
+}
+
+form a{
+    font-size: 15px;
+    color: #1B74E4;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+
+/*Pagina de login */
+
+.escola, .aluno, .botao-cadastrar{
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+    display: block;
+    width: 50%;;
+    font-size: 18px;
+    background-color: #42B72A;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.escola:hover, .aluno:hover, .botao-cadastrar:hover{
+    background-color: #3b9c27;
+}
+
+.sign{
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* Login Aluno */
+
+.entrar, .criar-conta{
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.entrar{
+    background-color: #FF9331;
+    font-size: 20px;
+    width: 100%;
+}
+
+.entrar:hover{
+    background-color: #df822b;
+}
+
+.criar-conta{
+    font-size: 18px;
+    background-color: #42B72A;
+    margin-top: 30px;
+}
+
+.criar-conta:hover{
+    background-color: #3b9c27;
+}
+
+
+
+
+/* responsividade mobile */
+
+@media(max-width: 900px){
+
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        margin: -30px auto;
+        padding-bottom: 25px;
+    }
+
+    .left{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+}
