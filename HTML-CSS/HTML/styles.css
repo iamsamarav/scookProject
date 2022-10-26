@@ -7,14 +7,23 @@
 body{
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    background-color: darkorange;
+    grid-template-areas: 
+    "aba fundo fundo"
+    "aba fundo fundo"
+    "aba fundo fundo"
+    
+    
+    
+    ;
     
 }
 
 .welcome{
 
-    width: 50vw;
+    width: 10vw;
     height: 100vh;
     display: flex;
     grid-column: 2/3;
@@ -23,15 +32,15 @@ body{
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    background-color: orange;
+    background-color: darkorange;
     color: white;
-    
+    grid-area: fundo;
 }
 
 .login{
 
-    width: 100%;
-    height: 100vh;
+    width: 75%;
+    height: 150vh;
     display: flex;
     grid-column: 1/2;
     flex-direction: column;
@@ -40,17 +49,19 @@ body{
     grid-row: 1/2;
     background-color: white;
     padding-left: 30px;
+    padding: 10px;
     border-right-style: solid;
     border-color: white;
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
+    border-top-right-radius: 800px;
+    border-bottom-right-radius: 800px;
+    /* border-radius: 1000px; */
     box-shadow: 1px 0px 20px 1px black;
-
+    grid-area: aba;
 }
 
 .scook{
 
-    font-size: 30px;
+    font-size: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
