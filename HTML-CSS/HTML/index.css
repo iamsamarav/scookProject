@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    box-sizing: border-box;
+
+}
+
+/* Explicando o body:
+
+- Tirou-se todas as margens e paddings;
+- Definimos como padrão de organização da página o GRID;
+- Definimos 2 colunas de mesmos tamanhos e 1 única linha.*/
+
+.container-links {
+    width: 100%;
+    height: 100vh;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Explicando o container-links:
+
+- Criou-se um container para a primeira coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão.*/
+
+
+
+.container-logo-texto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #369FFF;
+    color: white;
+
+}
+
+/* Explicando o container-logo-texto::after
+
+- Criou-se um container para a segunda coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão;
+- Definimos a cor do texto.*/
+
+.logo{
+    width: 50%;
+}
+
+/* Explicando o logo:
+
+- Definimos as medidas da logo que está posicionada na segunda coluna do nosso GRID.*/
+
+.botao{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: #B766BE;
+    border: 20px solid #B766BE;
+    border-radius: 25px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.botao:hover{
+    background-color: #369FFF;
+    border: 20px solid #369FFF;
+}
+
+/* Explicando o botao:
+
+- Definimos a cor dos nossos botões;
+- O arredondamento de suas bordas;
+- Utilizamos o margin para espaçar os itens;
+- Tiramos a decoração do texto do botão;
+- Definimos o tamanho do botão;
+- Aplicou-se mudanças quando o cursor passar por cima do botão. */
+
+.h3{
+
+    font-size: 25px;
+}
+
+.h2{
+    font-size: 30px;
+}
+
+.paragrafo{
+    font-size: 15px;
+    width: 50%;
+}
+
+/* Explicando modificações nos textos:
+
+- Definimos o tamanho das letras; 
+- Definimos o espaço que o parágrafo ocupa na segunda coluna.*/
+
+/* FALTA AJUSTAR O CARROSSEL */
