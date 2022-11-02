@@ -1,189 +1,144 @@
-body{margin: 0;}
-
-.div-grid {display: grid;
-grid-template-columns: 1fr, 1fr, 1fr;
-grid-template-rows: 100px, 100px, 100px, 100px, 100px;
-grid-template-areas: 
-"header header header"
-"nav    nav       nav"
-"foto foto foto"
-"texto texto texto"
-"botoes botoes botoes"
-
-
-;
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
+/* Explicando o *:
+
+-Estamos tirando todas as configurações pré-definidas.*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 0.7fr;
+}
+
+/* Explicando o body:
+
+-Estamos definindo a configuração geral do corpo do nosso código;
+-Definimos uma coluna no grid e 3 linhas que são,respectivamente, o header, o main e o footer do site. */
 
 header{
-    background-color: darkorange;
-    grid-area: header;
-}
-
-
-.barra-menu{
-    background-color: green;
-    grid-area: nav;
-    text-align: center;
-}
-
-.matricula-criar{
-    background-color: lightgreen;
-    grid-area: foto;
-}
-
-
-.texto-informacao{
-    background-color: lightgreen;
-    grid-area: texto;
-}
-
-
-.disposicao-elementos{
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content:space-evenly;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #369FFF;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* Explicando o header:
 
-#logo-scook-centralizada{
-margin-left: 41%;
+- Definimos os tamanhos;
+- Delimitamos o header dentro do nosso grid, portanto ele ocupará a primeira linha e toda a coluna;
+-Definimos a cor de fundo do nosso header;
+-Assim como as formatações.*/
+
+.logo{
+    width: 20%;
+    margin-left: 2%;
 }
 
-#tamanho-icone-perfil{
-    width: 55px;
-    height: 55px;
+/* Explicando o logo:
 
+- Definimos o comprimento da logo;
+- Definimos um espaçamento entre a logo e a borda inicial do site. */
+
+.texto-logo{
+    color:white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+    
 }
 
-form{text-align: right;
-}
+/* Explicando o texto-logo:
 
-#busca{
-    width: 500px;
-    height: 45px;  
-    text-align: center;
-    font-size: 45px;
-    border-radius: 20px;
-}
+- Definimos a cor do nosso texto, seu tamanho, a fonte;
+- Definimos também  um espaçamento entre o texto e a borda inicial do site. */
 
-#icone-lupa{
-    width:37px;
-    height:37px;
-    margin-right: 10px;
-}
-
-
-#menu{
-    list-style: none;
-    padding: 0;
-    justify-content: space-between ;
+.navegation{
+    width: 100vw;
+    height: 7vh;
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Explicando o navegation:
+
+- Construimos uma divisão dentro do nosso header para enfileirar as ferramentas de navegação do nosso site;
+- Definimos os tamanhos da nossa div;
+-  Definimos também  um espaçamento entre nossa div e os elementos acima. */
+
+.botao{
+    margin-bottom: 1vh ;
+    width: 15%;
+    background-color: #369FFF;
+    border: 2px solid #369FFF;
+    border-radius: 15px;
+    display: flex;
     justify-content: center;
-    align-items:center ;
-}
-
-#menu li {
-    display: inline;
-    font-size: 30px;
-}
-
-#menu li a{
-    display: inline-block;
+    align-items: center;
+    cursor: pointer;
     color: white;
-    text-decoration: none;
-    padding: 30px;
-    transition: background .6s;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px
 }
 
-#menu li a:hover{
-    background-color: rgb(24, 139, 233);
+/* Explicando o botao:
+
+- Definimos uma margem entre o botão e a borda inferior da div;
+- Estilizamos: a cor do fundo, o alinhamento dos itens, a interação com o cursor e todas as estilizações do texto; */
+
+.botao:hover{
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    color: black;
 }
 
-.elemento{
-width: 500px;
-height: 500px;
-background-color: whitesmoke;
-border: 1px solid black;
-margin-top: 80px;
-margin-bottom: 150px;
-border-radius: 30px;
+/* Explicando o hover do botão:
 
+- Utilizamos o hover para definir o comportamento do botão quando o cursor passa por cima dele;
+- Definimos mudanças na cor do texto, do background e da borda.*/
+
+.pesquisa{
+    width: 40%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 1vh;
+    color: blueviolet;
 }
 
-#centralizar-perfil{
-    margin-left: 41%;
+/* Explicando a caixa de pesquisa:
+
+- Definimos seu comprimento;
+- Sua cor de fundo e cor texto.*/
+
+.link-perfil{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-#camera{
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    margin-top: 400px;
-    margin-left: 40px;
+/* Explicando o botão do perfil:
+
+- Definimos o tamanho do botão;
+- Seu alinhamento e interação com o cursor.*/
+
+.perfil{
+    width: 25%;
 }
 
-#icone-camera-perfil{
-display: flex;
-list-style: none;
-padding: 0;
-margin-left: 32%;
-}
+/* Explicando perfil:
 
-#centralizar-texto-perfil{
-    text-align: center;
-    margin-left:70px ;
-    background-color: lightgreen;
-    list-style: none;   
-}
-
-.inputs{
-    grid-area: botoes;
-    background-color: lightgreen;
-    text-align: center;
-    /* display: flex;
-    flex-direction: column; */
-    
-}
-
-#texto-form-meio{
-    text-align: start;
-    margin-left: 1000px;
-}
-
-
-#nome{
-
-    border-radius: 100px;
-    background-color: rgb(169, 169, 169, 0.6) ;
-    width: 585px;
-    height: 25px;
-}
-
-#matricula{
-    border-radius: 100px;
-    background-color: rgb(169, 169, 169, 0.6) ;
-    width: 627px;
-    height: 25px;
-}
-
-#email{
-    border-radius: 100px;
-    background-color: rgb(169, 169, 169, 0.6) ;
-    width: 700px;
-    height: 25px;
-}
-
-
-
-#lista-invisivel{
-    list-style: none;
-    font-size: 30px;   
-    
-}
-
-#paragraft{
-    font-size: 25px
-}
-
+- Definimos o tamanho da imagem do perfil.*/
