@@ -1,0 +1,117 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-auto-rows: 1fr;
+    box-sizing: border-box;
+
+}
+
+/* Explicando o body:
+
+- Tirou-se todas as margens e paddings;
+- Definimos como padrão de organização da página o GRID;
+- Definimos 2 colunas de mesmos tamanhos e 1 única linha.*/
+
+.container-text{
+    width: 100%;
+    height: 100vh;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: #B567BC;
+}
+
+/* Explicando o container-text:
+
+- Criou-se um container para a primeira coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão.*/
+
+.container-form {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #369FFF;
+    color: white;
+
+}
+
+/* Explicando o container-form::after
+
+- Criou-se um container para a segunda coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão;
+- Definimos a cor do texto.*/
+
+
+.input-box input{
+    height: 0;
+    font-size: 15px;
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid #DDDFE2;
+    outline: none;
+}
+
+/* Explicando o input-box input */
+
+.input-box input:focus{
+    border-color: #75487c;
+}
+
+.container-form img{
+    max-height: 15%;
+    margin-bottom: 70px;
+}
+
+.container-form a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.container-form a:hover{
+    text-decoration: underline;
+}
+
+.botao-entrar{
+    background-color: #B567BC;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    width: 30%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+} 
+
+.botao-entrar:hover{
+    background-color: #804a85;
+}
