@@ -14,9 +14,12 @@ body{
 
 - Tirou-se todas as margens e paddings;
 - Definimos como padrão de organização da página o GRID;
-- Definimos 2 colunas de mesmos tamanhos e 1 única linha.*/
+- Definimos 2 colunas de tamanhos diferentes e 1 única linha.*/
 
-.container-links {
+
+/* >>> AQUI COMEÇA A PRIMEIRA COLUNA >>> */
+
+.container-left {
     width: 100%;
     height: 100vh;
     grid-column: 1/2;
@@ -28,51 +31,21 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Explicando o container-links:
-
+/* 
 - Criou-se um container para a primeira coluna do nosso GRID;
 - Ocupa 100% do espaço da coluna e toda a sua altura;
 - Delimitamos a coluna que usaremos;
 - Usamos o padrão flex dentro do container para posicionarmos os itens;
 - Definimos a fonte padrão.*/
 
-
-
-.container-logo-texto {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #369FFF;
-    color: white;
-
+.h3{
+    font-size: 20px;
 }
 
-/* Explicando o container-logo-texto::after
-
-- Criou-se um container para a segunda coluna do nosso GRID;
-- Ocupa 100% do espaço da coluna e toda a sua altura;
-- Delimitamos a coluna que usaremos;
-- Usamos o padrão flex dentro do container para posicionarmos os itens;
-- Definimos a fonte padrão;
-- Definimos a cor do texto.*/
-
-.logo{
-    width: 50%;
-}
-
-/* Explicando o logo:
-
-- Definimos as medidas da logo que está posicionada na segunda coluna do nosso GRID.*/
+/* - Definimos o tamanho das letras que ocupa a primeira coluna; .*/
 
 .botao{
-    width: 23%;
+    width: 22%;
     display: flex;
     justify-content: center;
     background-color: #B766BE;
@@ -86,57 +59,87 @@ body{
     transition: 0.4s;
 }
 
+/* 
+- Definimos a largura do botão;
+- Definimos a cor dos nossos botões da primeira coluna;
+- O arredondamento de suas bordas;
+- Utilizamos o margin para espaçar os itens;
+- Tiramos a decoração do texto do botão;
+- Colocamos um efeito de animação com o transition */
+
 .botao:hover{
     background-color: #369FFF;
 }
 
-/* Explicando o botao:
+/*
+ - Aplicou-se mudanças quando o cursor passar por cima do botão.
+ - Agora será possivel ver o efeito de animação do transition :) */
 
-- Definimos a cor dos nossos botões;
-- O arredondamento de suas bordas;
-- Utilizamos o margin para espaçar os itens;
-- Tiramos a decoração do texto do botão;
-- Definimos o tamanho do botão;
-- Aplicou-se mudanças quando o cursor passar por cima do botão. */
 
-.h3{
 
-    font-size: 20px;
+/* >>> AQUI COMEÇA A SEGUNDA COLUNA >>> */
+
+.container-right {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #369FFF; 
+    color: white;
 }
 
-.h2{
-    font-size: 30px;
-}
+/* 
+- Criou-se um container para a segunda coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão;
+- Definimos a cor do texto.*/
 
-.paragrafo{
-    font-size: 15px;
-    width: 50%;
-}
 
-/* Explicando modificações nos textos:
 
-- Definimos o tamanho das letras; 
-- Definimos o espaço que o parágrafo ocupa na segunda coluna.*/
-
-/* FALTA AJUSTAR O CARROSSEL */
+/* >>> EXPLICANDO O CARROSSEL DE IMAGENS DA SEGUNDA COLUNA >>> */
 
 .slider{
-    margin: 0 auto;
+    
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
+/*
+- Definimos o .slider com a mesma ocupação de espaço e altura da segunda coluna;
+- Colocamos um overflow: hidden; para iniciar o efeito de carrossel, sem exibir barra de rolagem na tela, 
+  mostrando somente a imagem checada e escondendo as demais;
+*/
+
 .slides{
+    display: flex;
     width: 400%;
     height: 100vh;
-    display: flex;
 }
+
+/*
+- Colocamos um display: flex; para deixar as imagens um do lado da outra;
+- Complementamos e definimos um width suficiente para esconder de fato as outras imagens que estão ao lado;
+- Você pode testar e mininuir o tamanho do width para entender melhor;
+- Colocamos o height da mesma altura da div class anterior;
+*/
 
 .slides input{
     display: none;
 }
+
+/*
+- Colocamos um display: none; para esconder os nossos inputs radio;
+*/
 
 .slide{
     width: 25%;
@@ -144,18 +147,34 @@ body{
     transition: .6s;
 }
 
+/*
+- Complementamos e definimos um width suficiente para esconder as imagens que estão ao lado;
+- Colocamos um transition para dar um efeito de animação de slide quando mudar a imagem;
+*/
+
 .slide img{
     width: 50%;
-    height: 90vh;
+    height: 95vh;
 }
+
+/*
+- Definimos o espaço e altura que cada imagem terá;
+*/
+
+
 
 .manual-navigation{
     position: absolute;
-    width: 800px;
+    width: 100%;
     margin-top: -40px;
     justify-content: center;
     display: flex;
 }
+
+/* defifindo a posição do manual de navegação:
+
+- Definimos o espaço com o mesmo tamanho do .slider;
+*/
 
 .manual-btn{
     border: 2px solid #fff;
@@ -164,38 +183,66 @@ body{
     cursor: pointer;
 }
 
+/*
+- estilizamos os botões que mudarão os slides da tela;
+*/
+
 .manual-btn:not(:last-child){
     margin-right: 10px;
 }
+
+/*
+- Definimos um margin-right para cada botão (MENOS NO ULTIMO);
+*/
 
 .manual-btn:hover{
     background-color: white;
 }
 
+/*
+- Definimos a cor do botão quando o mouse passar por cima;
+*/
+
 #radio1:checked ~ .first{
     margin-left: 0;
 }
+
+/*
+- Quando o primeiro botão estiver checado, a primeira imagem do slide aparecerá;
+- ainda no HTML, definimos que ao entrar na página, o primeiro botão já estará checado automaticamente :)
+*/
 
 #radio2:checked ~ .first{
     margin-left: -25%;
 }
 
+/*
+- Quando o segundo botão estiver checado, a segunda imagem do slide aparecerá;
+*/
+
 #radio3:checked ~ .first{
     margin-left: -50%;
 }
 
+/*
+- Quando o terceiro botão estiver checado, a terceira imagem do slide aparecerá;
+*/
 
 
 
-
+/* >>> ESTILIZAÇÃO PARA INDICAR QUAL BOTÃO ESTÁ ATIVO >>> */
 
 .navigation-auto{
     position: absolute;
-    width: 800px;
+    width: 100%;
     margin-top: 610px;
     justify-content: center;
     display: flex;
 }
+
+/*
+- Copiamos e colamos todas as estilizações usadas em .manual-navigation;
+*/
 
 .navigation-auto div{
     border: 2px solid #fff;
@@ -204,20 +251,38 @@ body{
     cursor: pointer;
 }
 
+/*
+- Copiamos e colamos todas as estilizações usadas em .manual-btn; 
+*/
+
 .navigation-auto div:not(:last-child){
     margin-right: 10px;
 }
 
-
+/*
+- Copiamos e colamos todas as estilizações usadas em .manual-btn:not; 
+*/
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
     background-color: #B766BE;
 }
 
+/*
+- Quando o primeiro botão estiver checado, o fundo mudará de cor;
+*/
+
 #radio2:checked ~ .navigation-auto .auto-btn2{
     background-color: #B766BE;
 }
 
+/*
+- Quando o segundo botão estiver checado, o fundo mudará de cor;
+*/
+
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color: #B766BE;
 }
+
+/*
+- Quando o terceiro botão estiver checado, o fundo mudará de cor;
+*/
