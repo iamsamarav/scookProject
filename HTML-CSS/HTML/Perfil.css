@@ -9,7 +9,7 @@
 -Estamos tirando todas as configurações pré-definidas.*/
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
@@ -142,3 +142,69 @@ header{
 /* Explicando perfil:
 
 - Definimos o tamanho da imagem do perfil.*/
+
+#logo-perfil-preta{
+    width: 350px;
+    height: 350px;
+}
+#logo-camera-preta{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 300px;
+
+}
+
+/* Explicando tamanho de imagens no site 
+- basicamente editando tamanho das imagens de camera e perfil
+*/
+
+.texto-alinhado{
+text-align: center;
+margin-top: 2%;
+}
+
+#alinhar-formulario{
+    margin-top: 1%;
+    text-align: center;
+
+}
+
+#li-alinhado{
+    margin-top: 2%;
+}
+
+/* Alinhamento
+- Onde as imagens e texto ficam alinhadas  */
+
+
+#tamanho-input-1{
+width: 400px;
+background-color:#B766BE;
+border-radius: 20px;
+}
+
+#tamanho-input-2{
+width: 370px;
+background-color:#B766BE;
+border-radius: 20px;
+}
+
+#tamanho-input-3{
+width: 400px;
+background-color:#B766BE;
+border-radius: 20px;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+#tamanho-formato-botao{
+  width: 200px; 
+  height: 50px; 
+  background-color: #B766BE;
+  color: white;
+}
