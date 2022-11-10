@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* Explicando o *:
+
+-Estamos tirando todas as configurações pré-definidas.*/
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 0.7fr;
+}
+
+/* Explicando o body:
+
+-Estamos definindo a configuração geral do corpo do nosso código;
+-Definimos uma coluna no grid e 3 linhas que são,respectivamente, o header, o main e o footer do site. */
+
+header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #369FFF;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Explicando o header:
+
+- Definimos os tamanhos;
+- Delimitamos o header dentro do nosso grid, portanto ele ocupará a primeira linha e toda a coluna;
+-Definimos a cor de fundo do nosso header;
+-Assim como as formatações.*/
+
+.logo{
+    width: 20%;
+    margin-left: 2%;
+}
+
+/* Explicando o logo:
+
+- Definimos o comprimento da logo;
+- Definimos um espaçamento entre a logo e a borda inicial do site. */
+
+.texto-logo{
+    color:white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+    
+}
+
+/* Explicando o texto-logo:
+
+- Definimos a cor do nosso texto, seu tamanho, a fonte;
+- Definimos também  um espaçamento entre o texto e a borda inicial do site. */
+
+.navegation{
+    width: 100vw;
+    height: 7vh;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Explicando o navegation:
+
+- Construimos uma divisão dentro do nosso header para enfileirar as ferramentas de navegação do nosso site;
+- Definimos os tamanhos da nossa div;
+-  Definimos também  um espaçamento entre nossa div e os elementos acima. */
+
+.botao{
+    margin-bottom: 1vh ;
+    width: 15%;
+    background-color: #369FFF;
+    border: 2px solid #369FFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px
+}
+
+/* Explicando o botao:
+
+- Definimos uma margem entre o botão e a borda inferior da div;
+- Estilizamos: a cor do fundo, o alinhamento dos itens, a interação com o cursor e todas as estilizações do texto; */
+
+.botao:hover{
+    background-color: aliceblue;
+    border: 2px solid aliceblue;
+    color: black;
+}
+
+/* Explicando o hover do botão:
+
+- Utilizamos o hover para definir o comportamento do botão quando o cursor passa por cima dele;
+- Definimos mudanças na cor do texto, do background e da borda.*/
+
+.pesquisa{
+    width: 40%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 1vh;
+    color: blueviolet;
+}
+
+/* Explicando a caixa de pesquisa:
+
+- Definimos seu comprimento;
+- Sua cor de fundo e cor texto.*/
+
+.link-perfil{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Explicando o botão do perfil:
+
+- Definimos o tamanho do botão;
+- Seu alinhamento e interação com o cursor.*/
+
+.perfil{
+    width: 25%;
+}
+
+/* Explicando perfil:
+
+- Definimos o tamanho da imagem do perfil.*/
+
+#barra-roxa{
+    width: 90%;
+    height: 100px;
+    background-color: #B766BE;
+    margin-left: 5%;
+    
+    margin-top: 3%;
+    border-radius: 10px;
+
+}
+
+#h1-barra-roxa{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+/* Barra roxa e seu texto interno */
+
+#texto-produtos-comprar{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+}
+
+/* Escolha quais produtos você deseja comprar: */
+
+#barra-azul{
+    width: 90%;
+    height: 100px;
+    background-color: #369FFF;
+    margin-left: 5%;   
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+}
+
+#h1-barra-azul{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* Barra azul com texto dentro */
+
+.tamanho-itens-tabela{
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+/* tamanho itens da tabela */
+
+#container-formas-de-pagamento{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+}
+
+#tamanho-pix{
+    width: 150px;
+    height: 50px;
+    margin-left: 1%;
+}
+
+#texto-do-pix{
+    margin-left: 2%;
+}
+
+/* propriedades sobre formas de pagamento */
+
+#container-transação-segura{
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    
+}
+
+#tamanho-cadeado{
+    width: 40px;
+    height: 55px;
+}
+
+
+#botao-direita{
+text-align: right;
+margin-right: 5%;
+margin-top: 10px;
+margin-bottom: 50px;
+
+}
+
+#botao{
+    padding: 1%;
+    width: 215px;
+    background-color: #B766BE;
+    color: white;
+    border-radius: 10px;      
+}
+
+/* Transação segura e botao pagar doação */
+
+/* >>> AQUI COMEÇA O FOOTER >>> */
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #369FFF;
+    display: flex;
+    align-items: center;
+}
+
+/*
+- Definimos a largura do footer a altura minima da mesma;
+- Definimos o posicionamento dos itens.
+*/
+
+footer .secao{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+/*
+- definimos a largura e a altura minima de cada seção dentro do footer;
+- definimos um padding;
+*/
+
+.secao h2, h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Definimos a cor dos titulos e a margem de cada seção*/
+
+.secao ul li{
+    margin: 10px 0px;
+    list-style: none;
+}
+
+/* 
+- Por padrão as listas vem acompanhados por números ordernados (1°, 2°) ou com bolinhas (°);
+- Usamos o 'List-style: none' para retirar essas estilizações padrões;
+- Definimos uma margem também;
+*/
+
+.secao ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*
+- Definimos uma cor para os link da seção;
+- Tiramos as estilizações dos links que vem por padrão;
+*/
+
+
+
+.secao ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Ao passar o mouse em cada link da seção, ele volta para a estilização padrão (underline). */
+
+
+.segundo-footer{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #348cdf;
+}
+
+/*
+Esse é o footer de baixo do footer :)
+
+- Essa é a continuação do footer
+- Também terá uma largura de 100%;
+- Ele terá uma cor mais escura também;
+*/
+
+.insta img{
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Definimos a altura do icon do Instagram */
+
+.footer h2, h5, p{
+    color: white;
+}
+
+/* Definimos uma cor para todos os texto desse footer*/
+
+.logo-footer img{
+    height: 40px;
+    margin: 2px 0;
+}
+
+/*Definimos a altura do Logo Scook no footer.
+
+
+<<< AQUI ACABA O FOOTER */
