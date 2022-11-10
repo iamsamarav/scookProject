@@ -143,69 +143,173 @@ header{
 
 - Definimos o tamanho da imagem do perfil.*/
 
-#logo-perfil-preta{
-    width: 350px;
-    height: 350px;
-}
-#logo-camera-preta{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-top: 300px;
-       
-}
-
-/* Explicando tamanho de imagens no site 
-- basicamente editando tamanho das imagens de camera e perfil
-*/
-
-.texto-alinhado{
-text-align: center;
-margin-top: 2%;
-}
-
-#alinhar-formulario{
-    margin-top: 1%;
-    text-align: center;
-  
-}
-
-#li-alinhado{
+#texto-referencia-1{
     margin-top: 2%;
+    margin-left: 200px;
+    margin-bottom: 70px;
 }
 
-/* Alinhamento
-- Onde as imagens e texto ficam alinhadas  */
-
-
-#tamanho-input-1{
-width: 400px;
-background-color:#B766BE;
-border-radius: 20px;
+#caixa-rosa{
+    background-color: #B766BE;
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    align-items: center;
+    padding: 15px;
 }
 
-#tamanho-input-2{
-width: 370px;
-background-color:#B766BE;
-border-radius: 20px;
+#botao{
+    margin-top: 150px;
+    margin-left: 85%;
+    width: 150px;
+    height: 40px;
 }
 
-#tamanho-input-3{
-width: 400px;
-background-color:#B766BE;
-border-radius: 20px;
+/* Parte da caixa rosa com botão */
+
+#texto-referencia-2{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 200px;
 }
 
-.botoes{
+#container-1{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 2%;
+    margin-bottom: 100px;
 }
 
-#tamanho-formato-botao{
-  width: 200px; 
-  height: 50px; 
-  background-color: #B766BE;
-  color: white;
+#elemento-1{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: #B766BE;
+    
+}
+#elemento-2{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: #B766BE;
+}
+#elemento-3{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    background-color: #B766BE;
 }
 
+.nome-escolas{
+    margin-top: 500px;
+    text-align: center;
+    
+}
+
+/* Parte onde fica os textos e os circulos onde vai ter imagens de escolas além de uns textos em baixo */
+
+/* >>> AQUI COMEÇA O FOOTER >>> */
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #369FFF;
+    display: flex;
+    align-items: center;
+}
+
+/*
+- Definimos a largura do footer a altura minima da mesma;
+- Definimos o posicionamento dos itens.
+*/
+
+footer .secao{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+/*
+- definimos a largura e a altura minima de cada seção dentro do footer;
+- definimos um padding;
+*/
+
+.secao h2, h4{
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Definimos a cor dos titulos e a margem de cada seção*/
+
+.secao ul li{
+    margin: 10px 0px;
+    list-style: none;
+}
+
+/* 
+- Por padrão as listas vem acompanhados por números ordernados (1°, 2°) ou com bolinhas (°);
+- Usamos o 'List-style: none' para retirar essas estilizações padrões;
+- Definimos uma margem também;
+*/
+
+.secao ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*
+- Definimos uma cor para os link da seção;
+- Tiramos as estilizações dos links que vem por padrão;
+*/
+
+
+
+.secao ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Ao passar o mouse em cada link da seção, ele volta para a estilização padrão (underline). */
+
+
+.segundo-footer{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #348cdf;
+}
+
+/*
+Esse é o footer de baixo do footer :)
+
+- Essa é a continuação do footer
+- Também terá uma largura de 100%;
+- Ele terá uma cor mais escura também;
+*/
+
+.insta img{
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Definimos a altura do icon do Instagram */
+
+.footer h2, h5, p{
+    color: white;
+}
+
+/* Definimos uma cor para todos os texto desse footer*/
+
+.logo-footer img{
+    height: 40px;
+    margin: 2px 0;
+}
+
+/*Definimos a altura do Logo Scook no footer.
+
+
+<<< AQUI ACABA O FOOTER */

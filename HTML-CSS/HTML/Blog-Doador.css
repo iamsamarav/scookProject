@@ -143,69 +143,209 @@ header{
 
 - Definimos o tamanho da imagem do perfil.*/
 
-#logo-perfil-preta{
-    width: 350px;
-    height: 350px;
-}
-#logo-camera-preta{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    margin-top: 300px;
-       
+#barra-roxa{
+    width: 90%;
+    height: 100px;
+    background-color: #B766BE;
+    margin-left: 5%;
+    
+    margin-top: 3%;
+    border-radius: 10px;
+
 }
 
-/* Explicando tamanho de imagens no site 
-- basicamente editando tamanho das imagens de camera e perfil
+#h1-barra-roxa{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+
+/* Barra roxa e seu texto interno */
+
+#texto-produtos-comprar{
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+}
+
+/* Escolha quais produtos você deseja comprar: */
+
+#barra-azul{
+    width: 90%;
+    height: 100px;
+    background-color: #369FFF;
+    margin-left: 5%;   
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+}
+
+#h1-barra-azul{
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+/* Barra azul com texto dentro */
+
+.tamanho-itens-tabela{
+    font-size: 30px;
+    margin-left: 5%;
+}
+
+/* tamanho itens da tabela */
+
+#container-formas-de-pagamento{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+}
+
+#tamanho-pix{
+    width: 150px;
+    height: 50px;
+    margin-left: 1%;
+}
+
+#texto-do-pix{
+    margin-left: 2%;
+}
+
+/* propriedades sobre formas de pagamento */
+
+#container-transação-segura{
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    
+}
+
+#tamanho-cadeado{
+    width: 40px;
+    height: 55px;
+}
+
+
+#botao-direita{
+text-align: right;
+margin-right: 5%;
+margin-top: 10px;
+margin-bottom: 50px;
+
+}
+
+#botao{
+    padding: 1%;
+    width: 215px;
+    background-color: #B766BE;
+    color: white;
+    border-radius: 10px;      
+}
+
+/* Transação segura e botao pagar doação */
+
+/* >>> AQUI COMEÇA O FOOTER >>> */
+
+
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #369FFF;
+    display: flex;
+    align-items: center;
+}
+
+/*
+- Definimos a largura do footer a altura minima da mesma;
+- Definimos o posicionamento dos itens.
 */
 
-.texto-alinhado{
-text-align: center;
-margin-top: 2%;
+footer .secao{
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
 }
 
-#alinhar-formulario{
-    margin-top: 1%;
-    text-align: center;
-  
+/*
+- definimos a largura e a altura minima de cada seção dentro do footer;
+- definimos um padding;
+*/
+
+.secao h2, h4{
+    color: white;
+    margin-bottom: 20px;
 }
 
-#li-alinhado{
-    margin-top: 2%;
+/* Definimos a cor dos titulos e a margem de cada seção*/
+
+.secao ul li{
+    margin: 10px 0px;
+    list-style: none;
 }
 
-/* Alinhamento
-- Onde as imagens e texto ficam alinhadas  */
+/* 
+- Por padrão as listas vem acompanhados por números ordernados (1°, 2°) ou com bolinhas (°);
+- Usamos o 'List-style: none' para retirar essas estilizações padrões;
+- Definimos uma margem também;
+*/
 
-
-#tamanho-input-1{
-width: 400px;
-background-color:#B766BE;
-border-radius: 20px;
+.secao ul li a{
+    color: white;
+    text-decoration: none;
 }
 
-#tamanho-input-2{
-width: 370px;
-background-color:#B766BE;
-border-radius: 20px;
+/*
+- Definimos uma cor para os link da seção;
+- Tiramos as estilizações dos links que vem por padrão;
+*/
+
+
+
+.secao ul li a:hover{
+    text-decoration: underline;
 }
 
-#tamanho-input-3{
-width: 400px;
-background-color:#B766BE;
-border-radius: 20px;
-}
+/* Ao passar o mouse em cada link da seção, ele volta para a estilização padrão (underline). */
 
-.botoes{
+
+.segundo-footer{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 2%;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #348cdf;
 }
 
-#tamanho-formato-botao{
-  width: 200px; 
-  height: 50px; 
-  background-color: #B766BE;
-  color: white;
+/*
+Esse é o footer de baixo do footer :)
+
+- Essa é a continuação do footer
+- Também terá uma largura de 100%;
+- Ele terá uma cor mais escura também;
+*/
+
+.insta img{
+    height: 40px;
+    cursor: pointer;
 }
 
+/* Definimos a altura do icon do Instagram */
+
+.footer h2, h5, p{
+    color: white;
+}
+
+/* Definimos uma cor para todos os texto desse footer*/
+
+.logo-footer img{
+    height: 40px;
+    margin: 2px 0;
+}
+
+/*Definimos a altura do Logo Scook no footer.
+
+
+<<< AQUI ACABA O FOOTER */
