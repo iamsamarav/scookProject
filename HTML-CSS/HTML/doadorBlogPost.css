@@ -168,7 +168,7 @@ main{
 
 }
 
-.form{
+form{
 
     height: 80%;
     width: 50%;
@@ -229,6 +229,8 @@ footer{
 }
 
 .blocoUm{
+    
+    margin-top: 1%;
     width: 99%;
     display: flex;
     flex-direction: row;

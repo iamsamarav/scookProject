@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="doadorBlogPost.css">
+    <link rel="stylesheet" href="doadorBloggerPost.css">
     <title>Scook</title>
 </head>
 
@@ -18,7 +18,7 @@
 
         <div class="navegation">
 
-            <input class="pesquisa" type="text" value="Pesquise aqui">
+            <input class="pesquisa" type="text" placeholder="Pesquise aqui">
             <a class="botao">Feed</a>
             <a class="botao">Blog</a>
             <a class="botao">Doar</a>
@@ -30,56 +30,35 @@
 
     <main>
 
-        <div class="titulo">
+        <form action="">
 
-            <h2>Realize aqui sua inscrição!</h2>
-
-        </div>
-
-            <form action="">
-
-                <div class="secao-form">
-
-                    <label class="label-form" for="">Nome completo:</label>
-                    <input class="inputs" type="text" placeholder="Digite aqui seu nome">
-
+            <div class="titulos">
+                <div class="bloco"> 
+                    <label for="">Título da publicação:</label>
+                    <input class="setForm" type="text" name="" id="" placeholder="Digite seu título aqui">
                 </div>
 
-                <div class="secao-form">
-
-                    <label class="label-form" for="">CPF/CNPJ:</label>
-                    <input class="inputs" type="" placeholder="Digite aqui seu CPF/CNPJ">
-
+                <div class="bloco"> 
+                    <label for="">Subtítulo:</label>
+                    <input class="setForm" type="text" name="" id="" placeholder="Digite seu subtítulo aqui">
                 </div>
 
-                <div class="secao-form">
-
-                    <label class="label-form" for="">Email:</label>
-                    <input class="inputs" type="text" placeholder="Digite aqui seu email">
-
+                <div class="bloco"> 
+                    <label for="">Descrição da publicação:</label>
+                    <input class="setForm" type="text" name="" id="" placeholder="Digite sua descrição aqui">
                 </div>
 
-                <div class="secao-form">
+            </div>
 
-                    <label class="label-form" for="">Senha:</label>
-                    <input class="inputs" type="text" placeholder="Digite aqui sua senha">
+            <div class="formTexto">
 
-                </div>
+                <input class="texto" type="text" placeholder="Digite seu post aqui.">
 
-                <div class="secao-form">
+                <button class="public">Publicar</button>
 
-                    <label class="label-form" for="">Telefone:</label>
-                    <input class="inputs" type="text" placeholder="Digite aqui seu número">
+            </div>
+        </form>
 
-                </div>
-
-                <div class="box-botao">
-
-                    <button class="botao-form">Voltar</button>
-                    <button class="botao-form">Finalizar</button>
-
-                </div>
-            </form>
     </main>
 
     <footer>
