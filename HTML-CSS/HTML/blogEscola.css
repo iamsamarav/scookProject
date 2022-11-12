@@ -9,11 +9,11 @@
 -Estamos tirando todas as configurações pré-definidas.*/
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 0.7fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 /* Explicando o body:
@@ -114,7 +114,13 @@ header{
     border: 5px solid white;
     border-radius: 15px;
     margin: 1vh;
-    color: blueviolet;
+    color: #B766BE;
+    padding-left: 1%;
+}
+
+.pesquisa::placeholder{
+
+    color: #B766BE;
 }
 
 /* Explicando a caixa de pesquisa:
@@ -143,173 +149,186 @@ header{
 
 - Definimos o tamanho da imagem do perfil.*/
 
-#texto-referencia-1{
-    margin-top: 2%;
-    margin-left: 200px;
-    margin-bottom: 70px;
-}
+/* >>> AQUI TERMINA O HEADER >>> */
 
-#caixa-rosa{
-    background-color: #B766BE;
-    width: 80%;
-    height: 300px;
-    margin-left: 10%;
-    margin-bottom: 100px;
-    border-radius: 20px;
-    align-items: center;
-    padding: 15px;
-}
 
-#botao{
-    margin-top: 150px;
-    margin-left: 85%;
-    width: 150px;
-    height: 40px;
-}
+/* >>> AQUI COMEÇA O MAIN >>> */
 
-/* Parte da caixa rosa com botão */
-
-#texto-referencia-2{
-    margin-top: 5%;
-    margin-bottom: 2%;
-    margin-left: 200px;
-}
-
-#container-1{
+main{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
 }
 
-#elemento-1{
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    background-color: #B766BE;
-    
-}
-#elemento-2{
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    background-color: #B766BE;
-}
-#elemento-3{
-    width: 500px;
-    height: 500px;
-    border-radius: 100%;
-    background-color: #B766BE;
-}
-
-.nome-escolas{
-    margin-top: 500px;
-    text-align: center;
-    
-}
-
-/* Parte onde fica os textos e os circulos onde vai ter imagens de escolas além de uns textos em baixo */
+/* >>> AQUI TERMINA O MAIN >>> */
 
 /* >>> AQUI COMEÇA O FOOTER >>> */
 
 
 footer{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100%;
     width: 100%;
-    min-height: 200px;
     background-color: #369FFF;
+    color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-/*
-- Definimos a largura do footer a altura minima da mesma;
-- Definimos o posicionamento dos itens.
+
+/* Explicando footer:
+
+- Definimos a altura e comprimento que ele deve ter;
+- Seu posicionamento absoluto no fim da página;
+- As cores do fundo e das letras;
+- Utilizamos flex para alinharmos tudo
 */
 
-footer .secao{
-    width: 320px;
-    min-height: 150px;
-    padding: 20px;
+.blocoUm{    
+    
+    height:50%;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1%;
+    
 }
 
-/*
-- definimos a largura e a altura minima de cada seção dentro do footer;
-- definimos um padding;
+
+/* Explicando blocoUm:
+
+- Definimos a altura e comprimento que ele deve ter;
+- Seu posicionamento absoluto dentro do footer;
+- Utilizamos flex para alinharmos tudo.
 */
 
-.secao h2, h4{
+.secao{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Explicando a secao:
+
+- Definimos a altura e comprimento que ele deve ter;
+- Utilizamos flex para alinharmos tudo;
+- Demos uma margem do blocoUm.
+*/
+
+.link{
+
     color: white;
-    margin-bottom: 20px;
 }
 
-/* Definimos a cor dos titulos e a margem de cada seção*/
+/* Explicando link: 
 
-.secao ul li{
-    margin: 10px 0px;
-    list-style: none;
-}
+- Definimos a cor dos links que estão na secao.*/
 
-/* 
-- Por padrão as listas vem acompanhados por números ordernados (1°, 2°) ou com bolinhas (°);
-- Usamos o 'List-style: none' para retirar essas estilizações padrões;
-- Definimos uma margem também;
-*/
+.link:hover{
 
-.secao ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-/*
-- Definimos uma cor para os link da seção;
-- Tiramos as estilizações dos links que vem por padrão;
-*/
-
-
-
-.secao ul li a:hover{
     text-decoration: underline;
 }
 
-/* Ao passar o mouse em cada link da seção, ele volta para a estilização padrão (underline). */
+/* Explicando link (hover):
 
+- Definimos o comportamento do link quando o cursor passar por cima.
 
-.segundo-footer{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: 70px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #348cdf;
-}
-
-/*
-Esse é o footer de baixo do footer :)
-
-- Essa é a continuação do footer
-- Também terá uma largura de 100%;
-- Ele terá uma cor mais escura também;
 */
 
-.insta img{
-    height: 40px;
-    cursor: pointer;
+.blocoDois{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #348cdf;
+    height: 50%;
 }
 
-/* Definimos a altura do icon do Instagram */
+/* Explicando a secao:
 
-.footer h2, h5, p{
-    color: white;
+- Definimos a altura e comprimento que ele deve ter;
+- Seu posicionamento absoluto no blocoUm;
+- As cores do fundo;
+- Utilizamos flex para alinharmos tudo;
+*/
+
+.instagram{
+
+    width: 10%;
 }
 
-/* Definimos uma cor para todos os texto desse footer*/
+/* Explicando instagram:
 
-.logo-footer img{
-    height: 40px;
-    margin: 2px 0;
+- Definimos o comprimento que será ocupado pelo link do instagram.*/
+
+.redeSocial{
+
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Definimos a altura do Logo Scook no footer.
+/* Explicando o redeSocial:
 
+- Definimos o espaço que o link ocupará do link;
+- Alinhamos tudo;*/
 
-<<< AQUI ACABA O FOOTER */
+.link{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Explicando o redeSocial:
+
+- Definimos o espaço que o link ocupará do blocoDois;
+- Alinhamos tudo;*/
+
+.logoFrase{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Explicando logoFrase: 
+
+- Definimos o espaço ocupado dentro do blocoDois;
+- Alinhamos tudo usando flex.*/
+
+#scookFooter{
+
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Explicando scookFooter:
+
+- Definimos o espaço ocupado dentro do logoFrase;
+- Alinhamos tudo.*/
+
+/*<<< AQUI ACABA O FOOTER */
