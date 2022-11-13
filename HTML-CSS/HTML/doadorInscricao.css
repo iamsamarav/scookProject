@@ -152,6 +152,11 @@ header{
 
 - Definimos o tamanho da imagem do perfil.*/
 
+.navegationAlternativa{
+
+    display: none;
+}
+
  /*<<< AQUI ACABA O HEADER*/
 
 main{
@@ -434,8 +439,166 @@ footer{
 
 /*<<< AQUI ACABA O FOOTER */
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     
+    body{
+    
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+    
+    header{
+    
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        background-color: #369FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .texto-logo{
+    
+        font-size: 13px;
+        margin-top: 1%;
 
+    }
+    
+    
+    .navegation{
+    
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navegationAlternativa{
+    
+        display: block;
+        width: 100%;
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        margin-top: 3%;
+    }
+    
+    .alinhamentoMenu{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        padding-bottom: 3%;
+    
+    }
+    
+    .botaoCel{
+    
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+    
+    }
+    
+    .menu{
+    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+    
+    .linkCel{
+    
+        width: 5%;
+        margin-right: 2%;
+    }
+    
+    .blocoUm{
+    
+        display: none;
+    
+    }
+    
+    .blocoDois{
+        height: 100%;
+    }
+    
+    .instagram{
+    
+        width: 40%;
+    }
+    
+    .logo{
+    
+        width: 50%;
+        margin-bottom: 3%;
+    }
+
+    .blocoMain{
+
+        width: 80%;
+        padding: 3%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    form{
+
+        width: 90%;
+    }
+
+    .titulos{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .bloco{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    label{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .setForm{
+
+        padding: 4%;
+        margin-top: 3%;
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .botaoForm{
+
+        width: 100%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
 
 }
