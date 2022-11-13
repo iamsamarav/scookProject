@@ -201,6 +201,11 @@ header {
     height: 100px;
 }
 
+.navegationAlternativa{
+
+    display: none;
+}
+
 /* Explicando perfil:
 
 - Definimos o tamanho da imagem do perfil.*/
@@ -659,4 +664,174 @@ footer {
 - Definimos o espaço ocupado dentro do logoFrase;
 - Alinhamos tudo.*/
 
-/*<<< AQUI ACABA O FOOTER *
+/*<<< AQUI ACABA O FOOTER */
+
+@media  screen and (max-width: 500px) {
+
+    body{
+    
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+    
+    header{
+    
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        background-color: #369FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .texto-logo{
+    
+        font-size: 13px;
+        margin-top: 1% ;
+    }
+    
+    
+    .navegation{
+    
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navegationAlternativa{
+    
+        display: block;
+        width: 100%;
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        margin-top: 3%;
+    }
+    
+    .alinhamentoMenu{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        padding-bottom: 3%;
+    
+    }
+    
+    .botaoCel{
+    
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+    
+    }
+    
+    .menu{
+    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+    }
+    
+    .linkCel{
+    
+        width: 5%;
+        margin-right: 2%;
+    }
+    
+    .blocoUm{
+    
+        display: none;
+    
+    }
+    
+    .blocoDois{
+        height: 100%;
+    }
+    
+    .instagram{
+    
+        width: 40%;
+    }
+    
+    .logo{
+    
+        width: 50%;
+        margin-bottom: 3%;
+    }
+
+    .org{
+
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 2%;
+    }
+
+    .container{
+
+        width: 90%;
+        padding: 2%;
+    }
+
+    .setBut{
+
+        width: 100%;
+    }
+
+    .seta{
+
+        width: 20%;
+    }
+
+    .table{
+
+        width: 100%;
+    }
+
+    .listaAlimentos{
+
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .valorPagar{
+
+        width: 90%;
+        margin-top: 5%;
+    }
+
+    .formaPagar{
+
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .efetuarPag{
+
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .cadeado{
+
+        width: 7%;
+    }
+
+    .h3Pagar{
+
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
