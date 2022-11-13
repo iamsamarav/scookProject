@@ -447,7 +447,7 @@ footer{
 /*<<< AQUI ACABA O FOOTER */
 
 
-@media screen and (max-width:480px){
+@media screen and (max-width:500px){
 
     body{
     
@@ -502,6 +502,7 @@ footer{
         align-items: center;
         justify-content: center;
         margin-top: 1%;
+        padding-bottom: 3%;
     
     }
     
@@ -521,6 +522,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        
     }
     
     .linkCel{
@@ -553,7 +555,7 @@ footer{
     .inscricao{
     
         width: 80%;
-        margin-top: 8%;
+        margin-top:8%;
     }
     
     .boxInform{
@@ -561,6 +563,7 @@ footer{
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding: 5%;
     }
     
     .textoInform{
@@ -612,6 +615,8 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 10%;
     }
     
     }
+    
