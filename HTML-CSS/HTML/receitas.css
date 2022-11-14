@@ -1,13 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
 }
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+/* Explicando o body:
+
+-Estamos definindo a configuração geral do corpo do nosso código;
+-Definimos uma coluna no grid e 3 linhas que são,respectivamente, o header, o main e o footer do site. */
+
+/* >>> AQUI COMEÇA O HEADER >>> */
 
 header{
     width: 100%;
     height: 100%;
     display: flex;
-    grid-column: 1/2;
     grid-row: 1/2;
     background-color: #369FFF;
     flex-direction: column;
@@ -22,6 +38,7 @@ header{
 -Assim como as formatações.*/
 
 .logo{
+    
     width: 20%;
     margin-left: 2%;
 }
@@ -32,10 +49,13 @@ header{
 - Definimos um espaçamento entre a logo e a borda inicial do site. */
 
 .texto-logo{
+
     color:white;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2%;
+    margin-top: 0.5%;
+
     
 }
 
@@ -46,7 +66,8 @@ header{
 
 .navegation{
     width: 100%;
-    height: 7vh;
+    height: 25%;
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -59,11 +80,10 @@ header{
 -  Definimos também  um espaçamento entre nossa div e os elementos acima. */
 
 .botao{
-    margin: 0 10px;
-    margin-bottom: 1vh ;
+    margin-bottom: 0.5% ;
     width: 15%;
     background-color: #369FFF;
-    border: none;
+    border: 2% solid #369FFF;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -71,57 +91,77 @@ header{
     cursor: pointer;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* Explicando o botao:
-- Definimos uma margem para cada botão
+
 - Definimos uma margem entre o botão e a borda inferior da div;
-- Tiramos a borda dos botões com o 'border: none' ;
 - Estilizamos: a cor do fundo, o alinhamento dos itens, a interação com o cursor e todas as estilizações do texto; */
 
 .botao:hover{
     background-color: aliceblue;
+    border: 2% solid aliceblue;
     color: black;
 }
 
 /* Explicando o hover do botão:
 
 - Utilizamos o hover para definir o comportamento do botão quando o cursor passa por cima dele;
-- Definimos mudanças na cor do texto e background.*/
+- Definimos mudanças na cor do texto, do background e da borda.*/
 
 .pesquisa{
     width: 40%;
     background-color: white;
-    border: none;
+    border: 5px solid white;
     border-radius: 15px;
-    color: blueviolet;
-    margin-bottom: 1vh;
-    margin-left: 10px;
+    margin: 1vh;
+    color: #B766BE;
+    padding-left: 1%;
+}
+
+.pesquisa::placeholder{
+
+    color: #B766BE;
 }
 
 /* Explicando a caixa de pesquisa:
 
 - Definimos seu comprimento;
-- Sua cor de fundo e cor texto.
-- Definimos as margin-bottom igual a classe .botao;
-- Definimos um margem a esquerda de 10px */
+- Sua cor de fundo e cor texto.*/
 
-.botao img{
-    margin: 0 5px;
+.link-perfil{
     width: 10%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    min-width: 15%;
+    margin-bottom: 0.5%;
 }
 
-/* Explicando o icon de perfil no botão:
+/* Explicando o botão do perfil:
 
-- Definimos o tamanho do icon;
-- Seu alinhamento e interação com o cursor.
-- Definimos o tamanho da imagem do perfil.
+- Definimos o tamanho do botão;
+- Seu alinhamento e interação com o cursor.*/
 
- <<< AQUI ACABA O HEADER*/
+.perfil{
+    width: 20%;
+}
+
+/* Explicando perfil:
+
+- Definimos o tamanho da imagem do perfil.*/
+
+.navegationAlternativa{
+
+    display: none;
+}
+
+/* >>> AQUI TERMINA O HEADER >>> */
+
+ /*<<< AQUI ACABA O HEADER*/
+
+
 
 
 
@@ -237,128 +277,311 @@ header{
 /* >>> AQUI COMEÇA O FOOTER >>> */
 
 
+
+/* AQUI COMEÇA O FOOTER */
+
 footer{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: 100%;
     width: 100%;
-    min-height: 200px;
     background-color: #369FFF;
+    color: white;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-/*
-- Definimos a largura do footer a altura minima da mesma;
-- Definimos o posicionamento dos itens.
+
+/* Explicando footer:
+
+- Definimos a altura e comprimento que ele deve ter;
+- Seu posicionamento absoluto no fim da página;
+- As cores do fundo e das letras;
+- Utilizamos flex para alinharmos tudo
 */
 
-footer .secao{
-    width: 320px;
-    min-height: 150px;
-    padding: 20px;
+.blocoUm{    
+    
+    height:50%;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 1%;
+    
 }
 
-/*
-- definimos a largura e a altura minima de cada seção dentro do footer;
-- definimos um padding;
+
+/* Explicando blocoUm:
+
+- Definimos a altura e comprimento que ele deve ter;
+- Seu posicionamento absoluto dentro do footer;
+- Utilizamos flex para alinharmos tudo.
 */
 
-.secao h2, h4{
+.secao{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Explicando a secao:
+
+- Definimos a altura e comprimento que ele deve ter;
+- Utilizamos flex para alinharmos tudo;
+- Demos uma margem do blocoUm.
+*/
+
+.link{
+
     color: white;
-    margin-bottom: 20px;
 }
 
-/* Definimos a cor dos titulos e a margem de cada seção*/
+/* Explicando link: 
 
-.secao ul li{
-    margin: 10px 0px;
-    list-style: none;
-}
+- Definimos a cor dos links que estão na secao.*/
 
-/* 
-- Por padrão as listas vem acompanhados por números ordernados (1°, 2°) ou com bolinhas (°);
-- Usamos o 'List-style: none' para retirar essas estilizações padrões;
-- Definimos uma margem também;
-*/
+.link:hover{
 
-.secao ul li a{
-    color: white;
-    text-decoration: none;
-}
-
-/*
-- Definimos uma cor para os link da seção;
-- Tiramos as estilizações dos links que vem por padrão;
-*/
-
-
-
-.secao ul li a:hover{
     text-decoration: underline;
 }
 
-/* Ao passar o mouse em cada link da seção, ele volta para a estilização padrão (underline). */
+/* Explicando link (hover):
 
+- Definimos o comportamento do link quando o cursor passar por cima.
 
-.segundo-footer{
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: 70px;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #348cdf;
-}
-
-/*
-Esse é o footer de baixo do footer :)
-
-- Essa é a continuação do footer
-- Também terá uma largura de 100%;
-- Ele terá uma cor mais escura também;
 */
 
-.insta img{
-    height: 40px;
-    cursor: pointer;
+.blocoDois{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #348cdf;
+    height: 50%;
 }
 
-/* Definimos a altura do icon do Instagram */
+/* Explicando a secao:
 
-.footer h2, h5, p{
-    color: white;
+- Definimos a altura e comprimento que ele deve ter;
+- Seu posicionamento absoluto no blocoUm;
+- As cores do fundo;
+- Utilizamos flex para alinharmos tudo;
+*/
+
+.instagram{
+
+    width: 10%;
 }
 
-/* Definimos uma cor para todos os texto desse footer*/
+/* Explicando instagram:
 
-.logo-footer img{
-    height: 40px;
-    margin: 2px 0;
+- Definimos o comprimento que será ocupado pelo link do instagram.*/
+
+.redeSocial{
+
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*Definimos a altura do Logo Scook no footer.
+/* Explicando o redeSocial:
+
+- Definimos o espaço que o link ocupará do link;
+- Alinhamos tudo;*/
+
+.link{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Explicando o redeSocial:
+
+- Definimos o espaço que o link ocupará do blocoDois;
+- Alinhamos tudo;*/
+
+.logoFrase{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Explicando logoFrase: 
+
+- Definimos o espaço ocupado dentro do blocoDois;
+- Alinhamos tudo usando flex.*/
+
+#scookFooter{
+
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Explicando scookFooter:
+
+- Definimos o espaço ocupado dentro do logoFrase;
+- Alinhamos tudo.*/
+
+/*<<< AQUI ACABA O FOOTER */
 
 
-<<< AQUI ACABA O FOOTER */
 
+@media screen and (max-width:500px){
 
+    body{
 
-/* AQUI COMEÇA A QUESTÃO DA RESPONSIVIDADE PARA TELAS MENORES.
-
-!!! AINDA NÃO PRONTO !!! */
-
-@media(max-width: 700px){
-
-    footer{
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+    
+    header{
+    
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        background-color: #369FFF;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+    
     }
-
-    footer .boxs{
-        text-align: center;
-        min-height: 150px;
+    
+    .texto-logo{
+    
+        font-size: 13px;
+        margin-top: 1% ;
     }
-
-    .footer p{
+    
+    
+    .navegation{
+    
         display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .navegationAlternativa{
+    
+        display: block;
+        width: 100%;
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        margin-top: 3%;
+    }
+    
+    .alinhamentoMenu{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        padding-bottom: 3%;
+    }
+    
+    .botaoCel{
+    
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+    
+    }
+    
+    .menu{
+    
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .linkCel{
+    
+        width: 5%;
+        margin-right: 2%;
+    }
+    
+    .blocoUm{
+    
+        display: none;
+    
+    }
+    
+    .blocoDois{
+        height: 100%;
+    }
+    
+    .instagram{
+    
+        width: 40%;
+    }
+    
+    .logo{
+    
+        width: 50%;
+        margin-bottom: 3%;
     }
 
+    .vitrine{
 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box-vitrine{
+
+        width: 80%;
+        margin-bottom: -2%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .descricao-receita{
+
+        font-size: 20px;
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .btn-receita{
+
+        width: 80%;
+        padding: 8%;
+        font-size: 18px ;
+    }
 }
