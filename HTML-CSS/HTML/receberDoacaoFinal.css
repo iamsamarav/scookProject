@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
 }
 
-body{
+body {
 
     width: 100%;
     height: 100vh;
@@ -20,7 +20,7 @@ body{
 
 /* >>> AQUI COMEÇA O HEADER >>> */
 
-header{
+header {
     width: 100%;
     height: 100%;
     display: flex;
@@ -37,8 +37,8 @@ header{
 -Definimos a cor de fundo do nosso header;
 -Assim como as formatações.*/
 
-.logo{
-    
+.logo {
+
     width: 20%;
     margin-left: 2%;
 }
@@ -48,15 +48,15 @@ header{
 - Definimos o comprimento da logo;
 - Definimos um espaçamento entre a logo e a borda inicial do site. */
 
-.texto-logo{
+.texto-logo {
 
-    color:white;
+    color: white;
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2%;
     margin-top: 0.5%;
 
-    
+
 }
 
 /* Explicando o texto-logo:
@@ -64,7 +64,7 @@ header{
 - Definimos a cor do nosso texto, seu tamanho, a fonte;
 - Definimos também  um espaçamento entre o texto e a borda inicial do site. */
 
-.navegation{
+.navegation {
     width: 100%;
     height: 25%;
     margin-top: 2%;
@@ -79,8 +79,8 @@ header{
 - Definimos os tamanhos da nossa div;
 -  Definimos também  um espaçamento entre nossa div e os elementos acima. */
 
-.botao{
-    margin-bottom: 0.5% ;
+.botao {
+    margin-bottom: 0.5%;
     width: 15%;
     background-color: #369FFF;
     border: 2% solid #369FFF;
@@ -99,7 +99,7 @@ header{
 - Definimos uma margem entre o botão e a borda inferior da div;
 - Estilizamos: a cor do fundo, o alinhamento dos itens, a interação com o cursor e todas as estilizações do texto; */
 
-.botao:hover{
+.botao:hover {
     background-color: aliceblue;
     border: 2% solid aliceblue;
     color: black;
@@ -110,7 +110,7 @@ header{
 - Utilizamos o hover para definir o comportamento do botão quando o cursor passa por cima dele;
 - Definimos mudanças na cor do texto, do background e da borda.*/
 
-.pesquisa{
+.pesquisa {
     width: 40%;
     background-color: white;
     border: 5px solid white;
@@ -118,10 +118,9 @@ header{
     margin: 1vh;
     color: #B766BE;
     padding-left: 1%;
-    outline: none;
 }
 
-.pesquisa::placeholder{
+.pesquisa::placeholder {
 
     color: #B766BE;
 }
@@ -131,7 +130,7 @@ header{
 - Definimos seu comprimento;
 - Sua cor de fundo e cor texto.*/
 
-.link-perfil{
+.link-perfil {
     width: 10%;
     display: flex;
     justify-content: center;
@@ -145,7 +144,7 @@ header{
 - Definimos o tamanho do botão;
 - Seu alinhamento e interação com o cursor.*/
 
-.perfil{
+.perfil {
     width: 20%;
 }
 
@@ -153,7 +152,7 @@ header{
 
 - Definimos o tamanho da imagem do perfil.*/
 
-.navegationAlternativa{
+.navegationAlternativa {
 
     display: none;
 }
@@ -162,26 +161,125 @@ header{
 
 -É o meio de navegação de telas menores.*/
 
-
 /* >>> AQUI TERMINA O HEADER >>> */
 
-/* >>> AQUI COMEÇA O MAIN >>> */
+/*<<< AQUI ACABA O HEADER*/
 
+main {
 
-main{
-    grid-column: 1/2;
     grid-row: 2/3;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 /* Explicando o main:
 
 - Definimos sua posição no grid, seu tamanho e posição.*/
+
+.filtro {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+
+}
+
+/* Explicando filtro: 
+
+-É a div que contém o blocoUmMain e o blocoDoisMain*/
+
+.filter {
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Explicando filter: 
+
+- É a classe de alinhamento dos itens.*/
+
+.blocoUmMain {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+
+}
+
+/* Explicando blocoUmMain: 
+
+- Representa o ticket e a quantidade de tickets.*/
+
+.ticket {
+
+    width: 5%;
+    margin-right: 5%;
+
+}
+
+/* Explicando ticket: 
+
+- Define-se o tamanho do ticket.*/
+
+.blocoDoisMain {
+
+    display: flex;
+    flex: row;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+
+}
+
+/* Explicando blocoDoisMain: 
+
+- Representa o carrinho e a quantidade de itens.*/
+
+.carro {
+
+    width: 5%;
+
+}
+
+/* Explicando carro: 
+
+- Define-se o tamanho do carrinho de compras*/
+
+#qtdItens {
+
+    background-color: #b766be93;
+    clip-path: circle(45%);
+    font-size: 18px;
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+/* Explicando qtdItens:  
+
+- É a quantidade de itens no carrinho.*/
 
 .inscricao{
 
@@ -215,6 +313,7 @@ main{
     margin-bottom: 2%;
     border-radius: 15px;
     height: 100%;
+    padding: 5%;
 }
 
 /* Explicando boxInform:
@@ -266,87 +365,9 @@ main{
 
 - É o botão de inscrição.*/
 
-.ultimasMat{
+/* AQUI COMEÇA O FOOTER */
 
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-}
-
-/* Explicando ultimasMat:
-
-- É a div que contém tudo das matérias.*/
-
-.materias{
-
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 5%;
-    justify-content: center;
-    height: 100%;
-}
-
-/* Explicando materias:
-
-- É a div que reúne as seções das matérias.*/
-
-.materiaBox{
-
-    width: 30%;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2%;
-    height: 80%;
-}
-
-/* Explicando materiaBox: 
-
-- É a div de seção das matérias.*/
-
-.imgMateria{
-
-    width: 70%;
-    clip-path: circle(50%);
-    margin-bottom: 7%;
-}
-
-/* Explicando imgMateria:
-
-- É a imagem exposta na matéria.*/
-
-.tituloMat{
-
-    margin-bottom: 5%;
-}
-
-/*Explicando tituloMat:
-
-- É o título em negrito no box de cada matéria.*/
-
-.linkMat{
-
-    text-decoration: none;
-    color: black;
-}
-
-.linkMat::after{
-
-    color: black;
-}
-
-/* >>> AQUI TERMINA O MAIN >>> */
-
-
-/* >>> AQUI COMEÇA O FOOTER >>> */
-
-
-footer{
+footer {
     grid-column: 1/2;
     grid-row: 3/4;
     height: 100%;
@@ -368,16 +389,16 @@ footer{
 - Utilizamos flex para alinharmos tudo
 */
 
-.blocoUm{    
-    
-    height:50%;
+.blocoUm {
+
+    height: 50%;
     width: 99%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 1%;
-    
+
 }
 
 
@@ -388,7 +409,7 @@ footer{
 - Utilizamos flex para alinharmos tudo.
 */
 
-.secao{
+.secao {
 
     margin-top: 1%;
     margin-bottom: 1%;
@@ -407,7 +428,7 @@ footer{
 - Demos uma margem do blocoUm.
 */
 
-.link{
+.link {
 
     color: white;
 }
@@ -416,7 +437,7 @@ footer{
 
 - Definimos a cor dos links que estão na secao.*/
 
-.link:hover{
+.link:hover {
 
     text-decoration: underline;
 }
@@ -427,7 +448,7 @@ footer{
 
 */
 
-.blocoDois{
+.blocoDois {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -445,7 +466,7 @@ footer{
 - Utilizamos flex para alinharmos tudo;
 */
 
-.instagram{
+.instagram {
 
     width: 10%;
 }
@@ -454,7 +475,7 @@ footer{
 
 - Definimos o comprimento que será ocupado pelo link do instagram.*/
 
-.redeSocial{
+.redeSocial {
 
     width: 25%;
     display: flex;
@@ -467,7 +488,7 @@ footer{
 - Definimos o espaço que o link ocupará do link;
 - Alinhamos tudo;*/
 
-.link{
+.link {
 
     width: 100%;
     display: flex;
@@ -481,7 +502,7 @@ footer{
 - Definimos o espaço que o link ocupará do blocoDois;
 - Alinhamos tudo;*/
 
-.logoFrase{
+.logoFrase {
 
     width: 50%;
     display: flex;
@@ -495,7 +516,7 @@ footer{
 - Definimos o espaço ocupado dentro do blocoDois;
 - Alinhamos tudo usando flex.*/
 
-#scookFooter{
+#scookFooter {
 
     width: 25%;
     display: flex;
@@ -510,186 +531,157 @@ footer{
 
 /*<<< AQUI ACABA O FOOTER */
 
-@media screen and (max-width:500px){
-
-/* Responsividade aplicada para telas de celulares. */
-
-body{
-
-    width: 100%;
-    height: 100vh;
-    grid-template-rows: 1fr 2fr 0.5fr;
-}
-
-/* HEADER */
-
-header{
-
-    grid-row: 1/2;
-    width: 100%;
-    height: 100%;
-    background-color: #369FFF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.texto-logo{
-
-    font-size: 13px;
-    margin-top: 1% ;
-}
 
 
-.navegation{
+@media screen and (max-width:500px) {
 
-    display: none;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
+    body {
 
-.navegationAlternativa{
+        width: 100%;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
 
-    display: block;
-    width: 100%;
-    background-color: #369FFF;
-    border: none;
-    color: white;
-    margin-top: 3%;
-}
+    /* HEADER */
 
-.alinhamentoMenu{
+    header {
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1%;
-    padding-bottom: 3%;
-}
-
-.botaoCel{
-
-    background-color: #369FFF;
-    border: none;
-    color: white;
-    font-size: 25px;
-    font-weight: bolder;
-
-}
-
-.menu{
-
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.linkCel{
-
-    width: 5%;
-    margin-right: 2%;
-}
-
-/* HEADER */
-
-/* FOOTER */
-
-.blocoUm{
-
-    display: none;
-
-}
-
-.blocoDois{
-    height: 100%;
-}
-
-.instagram{
-
-    width: 40%;
-}
-
-.logo{
-
-    width: 50%;
-    margin-bottom: 3%;
-}
-
-/* FOOTER */
-
-/* MAIN */
-
-.inscricao{
-
-    width: 80%;
-    margin-top: 8%;
-}
-
-.boxInform{
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.textoInform{
-
-    width: 90%;
-    margin-bottom: 8%;
-    padding: 5%;
-}
-
-.inscrevaSe{
-
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 4%;
-    margin-bottom: 4%;
-
-}
-
-.fraseScook{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.fraseInscricao{
-
-    margin-bottom: 3%;
-}
-
-.ultimasMat{
-
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-}
-
-.materias{
-
+        grid-row: 1/2;
+        width: 100%;
+        height: 100%;
+        background-color: #369FFF;
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+    }
+
+    .texto-logo {
+
+        font-size: 13px;
+        margin-top: 1%;
+    }
+
+
+    .navegation {
+
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegationAlternativa {
+
+        display: block;
+        width: 100%;
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        margin-top: 3%;
+    }
+
+    .alinhamentoMenu {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+        padding-bottom: 3%;
+    }
+
+    .botaoCel {
+
+        background-color: #369FFF;
+        border: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bolder;
+
+    }
+
+    .menu {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .linkCel {
+
+        width: 5%;
+        margin-right: 2%;
+    }
+
+    /* HEADER */
+
+    /* FOOTER */
+
+    .blocoUm {
+
+        display: none;
+
+    }
+
+    .blocoDois {
+        height: 100%;
+    }
+
+    .instagram {
+
+        width: 40%;
+    }
+
+    .logo {
+
+        width: 50%;
+        margin-bottom: 3%;
+    }
+
+    /* FOOTER */
+
+    /* MAIN */
+
+    .filtro {
+
+        width: 100%;
+    }
+
+
+    .filter {
+
+        width: 90%;
+
+    }
+
+    .containerCel {
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container {
+
+        display: none;
+    }
+
+    .produto {
+
+        width: 90%;
+        margin-bottom: 10%;
+    }
+
+    main {
+
+        margin-bottom: -110%;
+    }
+
+    /* MAIN */
 }
-
-.materiaBox{
-
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10%;
-}
-
-}
-
-/* MAIN */
