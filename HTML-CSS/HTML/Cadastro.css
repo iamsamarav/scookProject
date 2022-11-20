@@ -13,6 +13,8 @@ body{
     
 }
 
+
+
 .blocoUm{
 
     grid-column: 1/2;
@@ -28,6 +30,10 @@ body{
 
 }
 
+/* Explicando blocoUm:
+
+- Bloco da esquerda. */
+
 .blocoDois{
 
     grid-column: 2/3;
@@ -42,6 +48,10 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+/* Explicando blocoUm:
+
+- Bloco da direita. */
 
 .logo{
 
@@ -59,9 +69,17 @@ a{
     font-weight: bold;
     width: 80%;
     margin-top: 2%;
-
-
 }
+
+a:hover{
+
+    background-color: violet;
+    color: black;
+}
+
+/* Explicando a:
+
+- Botões do bloco da direita.*/
 
 .alinhamento{
 
@@ -73,11 +91,9 @@ a{
     
 }
 
-a:hover{
+/* Explicando o alinhamento: 
 
-    background-color: violet;
-    color: black;
-}
+- Div de alinhamento do bloco direita.*/
 
 h1{
 
@@ -85,7 +101,13 @@ h1{
 
 }
 
+/* Explicando h1:
+
+- Texto do bloco da direita.*/
+
 @media screen and (max-width:500px){
+
+/* Responsividade aplicada para celulares */
 
     body{
 

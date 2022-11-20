@@ -157,6 +157,10 @@ header{
     display: none;
 }
 
+/* Explicando o navegation Alternativo:
+
+-É o meio de navegação de telas menores.*/
+
 /* AQUI TERMINA O HEADER */
 
 /* AQUI COMEÇA O MAIN */
@@ -170,6 +174,10 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
 
 .blocoMain{
 
@@ -185,9 +193,17 @@ main{
     border-radius: 15px;
 }
 
+/* Explicando blocoMain: 
+
+- Imagem de perfil e cadeado.*/
+
 .imgPerfil{
     width: 30%;
 }
+
+/* Explicando imgPerfil: 
+
+- Definindo o tamanho da foto de perfil.*/
 
 .cadeado{
 
@@ -195,6 +211,10 @@ main{
     clip-path: circle(50%);
     margin-left: -9%;
 }
+
+/* Explicando cadeado: 
+
+- Definindo formatação da câmera.*/
 
 form{
 
@@ -205,6 +225,10 @@ form{
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* Explicando form: 
+
+- Todas os componentes do formulário.*/
 
 .titulos{
     margin-top: 1%;
@@ -217,6 +241,10 @@ form{
 
 }
 
+/* Explicando titulos: 
+
+- Div do formulário.*/
+
 .informacoes{
 
     width: 70%;
@@ -227,8 +255,11 @@ form{
     font-family: Arial, Helvetica, sans-serif;
     margin: 3%;
 
-
 }
+
+/* Explicando informacoes: 
+
+- Texto de informações abaixo da imagem do perfil.*/
 
 .setForm{
 
@@ -251,6 +282,10 @@ form{
     color: white;
 }
 
+/* Explicando setForm: 
+
+- Caixa de entrada de dados.*/
+
 .bloco{
     width: 100%;
     display: flex;
@@ -259,6 +294,10 @@ form{
     font-size: 20px;
     justify-content: flex-start;
 }
+
+/* Explicando bloco: 
+
+- Bloco com label e input.*/
 
 label{
     
@@ -271,6 +310,10 @@ label{
     align-items: center;
 }
 
+/* Explicando label: 
+
+- Descrição da caixa de entrada de dados.*/
+
 .botaoForm{
 
     width: 50%;
@@ -280,6 +323,10 @@ label{
     margin: 2%;
 
 }
+
+/* Explicando botaoForm: 
+
+- Div com os botões.*/
 
 .bForm{
 
@@ -299,6 +346,10 @@ label{
 
 }
 
+/* Explicando bForm: 
+
+- Os botões do form.*/
+
 @media (max-width: 500px) {
     
     body{
@@ -307,6 +358,8 @@ label{
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+    /* HEADER */
     
     header{
     
@@ -383,6 +436,10 @@ label{
         width: 5%;
         margin-right: 2%;
     }
+
+    /* HEADER */
+
+    /* FOOTER */
     
     .blocoUm{
     
@@ -404,6 +461,10 @@ label{
         width: 50%;
         margin-bottom: 3%;
     }
+
+    /* FOOTER */
+
+    /* MAIN */
 
     .blocoMain{
 
@@ -460,5 +521,7 @@ label{
         padding-top: 3%;
         padding-bottom: 3%;
     }
+
+    /* MAIN */
 
 }

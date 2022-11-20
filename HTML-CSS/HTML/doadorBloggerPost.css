@@ -117,15 +117,19 @@ header{
     color: #B766BE;
 }
 
+/* Explicando a caixa de pesquisa:
+
+- Definimos seu comprimento;
+- Sua cor de fundo e cor texto.*/
+
 .navegationAlternativa{
 
 display: none;
 }
 
-/* Explicando a caixa de pesquisa:
+/* Explicando o navegation Alternativo:
 
-- Definimos seu comprimento;
-- Sua cor de fundo e cor texto.*/
+-É o meio de navegação de telas menores.*/
 
 .link-perfil{
     width: 10%;
@@ -151,6 +155,8 @@ display: none;
 
  /*<<< AQUI ACABA O HEADER*/
 
+ /* AQUI COMEÇA O MAIN */
+
 main{
     grid-column: 1/2;
     grid-row: 2/3;
@@ -161,6 +167,10 @@ main{
     align-items: center;
 }
 
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
+
 form{
 
     width: 100%;
@@ -170,6 +180,11 @@ form{
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* Explicando o form:
+
+- Esse é o container que comporta todos os itens.*/
+
 .titulos{
     margin-top: 3%;
     margin-bottom: 1%;
@@ -180,6 +195,10 @@ form{
     align-items: flex-start;
 
 }
+
+/* Explicando o títulos:
+
+- Div que comporta todas as caixas de entrada.*/
 
 .setForm{
 
@@ -195,13 +214,16 @@ form{
     padding-left: 2%;
     display: block;
     margin-top: 3%;
-
 }
 
 .setForm::placeholder{
 
     color: white;
 }
+
+/* Explicando o setForm:
+
+- A caixa de entrada do form.*/
 
 .bloco{
     width: 100%;
@@ -211,10 +233,18 @@ form{
     font-size: 25px;
 }
 
+/* Explicando bloco: 
+
+- Div que inclui o label e o input.*/
+
 label{
 
     margin-right:  1%; 
 }
+
+/* Explicando label:
+
+- Descrição do input.*/
 
 .formTexto{
 
@@ -225,6 +255,10 @@ label{
     justify-content: center;
     align-items: center;  
 }
+
+/* Explicando formTexto:
+
+- Div que comporta o bloco de texto e o botão.*/
 
 .texto{
     width: 100%;
@@ -237,6 +271,10 @@ label{
     outline: none;
     
 }
+
+/* Explicando texto: 
+
+- Bloco de texto.*/
 
 .public{
 
@@ -255,6 +293,10 @@ label{
     margin-top: 4%;
 
 }
+
+/* Explicando o public:
+
+- O botão de publicar.*/
 
 /* >>> AQUI COMEÇA O FOOTER >>> */
 
@@ -425,12 +467,16 @@ footer{
 
 @media screen and (max-width: 500px){
 
+/* Responsividade aplicada para celulares */
+
     body{
     
         width: 100%;
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+    /* HEADER */
     
     header{
     
@@ -506,6 +552,10 @@ footer{
         width: 5%;
         margin-right: 2%;
     }
+
+    /* HEADER */
+
+    /* FOOTER */
     
     .blocoUm{
     
@@ -527,6 +577,9 @@ footer{
         width: 50%;
         margin-bottom: 3%;
     }
+
+    /* FOOTER */
+    /* MAIN */
 
     .titulos{
 
@@ -595,5 +648,7 @@ footer{
         outline: none;
     
     }
+
+    /* MAIN */
 
 }

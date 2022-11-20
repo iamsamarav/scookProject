@@ -164,6 +164,8 @@ form{
 
 @media  screen and (max-width: 500px) {
 
+/* Responsividade aplicada para celulares */
+
     .container{
 
         display: flex;

@@ -157,6 +157,11 @@ header{
     display: none;
 }
 
+/* Explicando o navegation Alternativo:
+
+-É o meio de navegação de telas menores.*/
+
+
 /* >>> AQUI TERMINA O HEADER >>> */
 
 
@@ -172,7 +177,11 @@ main{
     align-items: center;
 }
 
-.inscricao{
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
+
+.receitas{
 
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
@@ -184,6 +193,11 @@ main{
     margin-bottom: 2%;
     height: 100%;
 }
+
+/* Explicando receitas:
+
+- É o bloco que contém o título e o box de inscrição;
+- Alinhamento, margens e tamanhos foram definidos.*/
 
 .boxInform{
 
@@ -202,7 +216,12 @@ main{
 
 }
 
-.inscrevaSe{
+/* Explicando boxInform:
+
+- É a div com a explicação da inscrição e o botão;
+- Cor do texto, preenchimento, alinhamento, borda e cor de fundo definidos.*/
+
+.visitarReceitas{
 
     width: 50%;
     height: 100%;
@@ -212,13 +231,21 @@ main{
     
 }
 
+/* Explicando visitarReceitas:
+
+- É a div que contém o botão de inscrição.*/
+
 .textoInform{
 
     width: 50%;
 
 }
 
-.btInscrevaSe{
+/* Explicando textoInform:
+
+- É a div que contém o texto do box de inscrição.*/
+
+.btVisitarReceitas{
 
     background-color: #53005b;
     color: white;
@@ -227,12 +254,16 @@ main{
     font-size: 15px;
 }
 
-.btInscrevaSe:hover{
+.btVisitarReceitas:hover{
 
     background-color: #369FFF;
     border: 10px solid #369FFF;
     color: black;
 }
+
+/* Explicando btVisitarReceitas:
+
+- É o botão de inscrição.*/
 
 .ultimasMat{
 
@@ -243,6 +274,10 @@ main{
     height: 100%;
 }
 
+/* Explicando ultimasMat:
+
+- É a div que contém tudo das matérias.*/
+
 .materias{
 
     display: flex;
@@ -252,6 +287,10 @@ main{
     justify-content: center;
     height: 100%;
 }
+
+/* Explicando materias:
+
+- É a div que reúne as seções das matérias.*/
 
 .materiaBox{
 
@@ -265,6 +304,10 @@ main{
     height: 80%;
 }
 
+/* Explicando materiaBox: 
+
+- É a div de seção das matérias.*/
+
 .imgMateria{
 
     width: 70%;
@@ -272,9 +315,28 @@ main{
     margin-bottom: 7%;
 }
 
+/* Explicando imgMateria:
+
+- É a imagem exposta na matéria.*/
+
 .tituloMat{
 
     margin-bottom: 5%;
+}
+
+/*Explicando tituloMat:
+
+- É o título em negrito no box de cada matéria.*/
+
+.linkMat{
+
+    text-decoration: none;
+    color: black;
+}
+
+.linkMat::after{
+
+    color: black;
 }
 
 /* >>> AQUI TERMINA O MAIN >>> */
@@ -449,12 +511,16 @@ footer{
 
 @media screen and (max-width:500px){
 
+/* Responsividade aplicada para telas de celulares */
+
     body{
     
         width: 100%;
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+/* HEADER */
     
     header{
     
@@ -530,6 +596,10 @@ footer{
         width: 5%;
         margin-right: 2%;
     }
+
+/* HEADER */
+
+/* FOOTER */
     
     .blocoUm{
     
@@ -572,8 +642,17 @@ footer{
         margin-bottom: 8%;
         padding: 2%;
     }
+
+/* FOOTER */
+
+/* MAIN */
+
+    .receitas{
+
+        width: 80%;
+    }
     
-    .inscrevaSe{
+    .visitarReceitas{
     
         width: 100%;
         display: flex;
@@ -617,6 +696,8 @@ footer{
         justify-content: center;
         margin-bottom: 10%;
     }
+
+    /* MAIN */
     
     }
     

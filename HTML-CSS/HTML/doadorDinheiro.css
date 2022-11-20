@@ -143,16 +143,6 @@ header {
 - Definimos o tamanho do botão;
 - Seu alinhamento e interação com o cursor.*/
 
-.perfil {
-    width: 20%;
-}
-
-/* Explicando perfil:
-
-- Definimos o tamanho da imagem do perfil.*/
-
-/*<<< AQUI ACABA O HEADER*/
-
 .item:hover .opcoesPerfil {
 
     display: block;
@@ -165,6 +155,9 @@ header {
     width: 100%;
 }
 
+/* Explicando perfil:
+
+- Definimos o tamanho da imagem do perfil.*/
 
 .item {
 
@@ -177,6 +170,10 @@ header {
 
 }
 
+/* Explicando o item:
+
+- Div que comporta a imagem e as opções do perfil.*/
+
 .opcoesPerfil {
 
     display: none;
@@ -186,6 +183,10 @@ header {
 
 
 }
+
+/* Explicando o opcoesPerfil:
+
+- Div que comporta o alinhamento.*/
 
 .alinhamento {
 
@@ -201,14 +202,18 @@ header {
     height: 100px;
 }
 
+/* Explicando o alinhamento:
+
+- Div que comporta as opções dos links.*/
+
 .navegationAlternativa{
 
     display: none;
 }
 
-/* Explicando perfil:
+/* Explicando o navegation Alternativo:
 
-- Definimos o tamanho da imagem do perfil.*/
+-É o meio de navegação de telas menores.*/
 
 /* >>> AQUI TERMINA O HEADER >>> */
 
@@ -224,6 +229,10 @@ main {
     align-items: center;
 }
 
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
+
 .org {
 
     width: 70%;
@@ -238,6 +247,10 @@ main {
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Explicando o org:
+
+- Primeiro bloco no main.*/
 
 .container {
 
@@ -258,6 +271,10 @@ main {
 
 }
 
+/* Explicando o container:
+
+- Div que comporta todos os detalhes da lista de produtos.*/
+
 .alinhamentoContainer {
 
     margin-top: 1%;
@@ -274,10 +291,18 @@ main {
     position: relative;
 }
 
+/* Explicando alinhamentoContainer:
+
+- Div que posiciona os elementos do container. */
+
 .seta {
 
     width: 7%;
 }
+
+/* Explicando seta:
+
+- Seta da div container.*/
 
 .listaAlimentos {
 
@@ -287,8 +312,11 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
+
+/* Explicando listaAlimentos: 
+
+- Div com a tabela de produtosd que fica abaixo da lista de produtos.*/
 
 .submenuCont {
 
@@ -305,12 +333,18 @@ main {
 
 }
 
+
+
 .container:hover .submenuCont {
 
     display: block;
     z-index: 1;
 
 }
+
+/* Explicando o submenuCont: 
+
+- Div que comporta todos os produtos*/
 
 .setBut {
 
@@ -322,6 +356,10 @@ main {
     position: relative;
 }
 
+/* Explicando setBut:
+
+- O link que comporta a seta.*/
+
 .alinhamentoSubmenu {
 
     width: 100%;
@@ -331,6 +369,10 @@ main {
 
 }
 
+/* Explicando alinhamentoSubmenu: 
+
+- Div que alinha que posiciona o submenu.*/
+
 .elemento {
 
     display: flex;
@@ -339,6 +381,10 @@ main {
     width: 100%;
     justify-content: space-evenly;
 }
+
+/* Explicando elemento:
+
+- Cada produto contido no submenu.*/
 
 .valorPagar {
 
@@ -353,12 +399,20 @@ main {
 
 }
 
+/* Explicando valorPagar: 
+
+- Div que comporta o texto e o valor.*/
+
 .valor {
 
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 2%;
 }
+
+/* Explicando valor: 
+
+- Div que comporta o valor a ser pago.*/
 
 .formaPagar {
 
@@ -369,10 +423,18 @@ main {
     margin-top: 2%;
 }
 
+/* Explicando formaPagar:
+
+- Div que comporta todas as opções de pagamento.*/
+
 .h3Pagar {
 
     margin-bottom: 2%;
 }
+
+/* Explicando h3Pagar:
+
+- Estilização do "Forma de pagamento"*/
 
 .opcoesPagar {
 
@@ -383,6 +445,10 @@ main {
     align-items: center;
 }
 
+/* Explicando opcoesPagar: 
+
+- Div com o blocoUmPagar e o blocoDoisPagar.*/
+
 .blocoUmPagar {
 
     width: 10%;
@@ -390,20 +456,30 @@ main {
     justify-content: center;
 }
 
+/* Explicando blocoUmPagar: 
+
+- Div que comporta o radio.*/
+
 .blocoDoisPagar {
 
     width: 100%;
     display: flex;
     flex-direction: column;
-
-
 }
+
+/* Explicando blocoDoisPagar: 
+
+- Div que comporta a div pix e o parag.*/
 
 .parag {
 
     width: 100%;
     padding-left: 3%;
 }
+
+/* Explicando o parag: 
+
+- Div com o texto explicando o pix.*/
 
 .pix {
 
@@ -416,16 +492,28 @@ main {
     margin-bottom: 1%;
 }
 
+/* Explicando pix: 
+
+- Div com a imagem do pix e o h5*/
+
 .h4Pix {
 
     font-size: 25px;
 }
+
+/* Explicando o h4Pix:
+
+-Estilização do texto da div pix.*/
 
 .imgPix {
 
     width: 5%;
     margin-right: 2%;
 }
+
+/* Explicando imgPix: 
+
+- Definindo o tamanho da imagem pix.*/
 
 .efetuarPag {
 
@@ -436,6 +524,10 @@ main {
     margin-bottom: 2%;
 
 }
+
+/* Explicando efetuarPag: 
+
+- Div com os divs: text e botaoPag.*/
 
 .text {
 
@@ -448,16 +540,28 @@ main {
 
 }
 
+/* Explicando text: 
+
+- Img cadeado e texto.*/
+
 .cadeado {
 
     width: 3%;
     margin-right: 2%;
 }
 
+/* Explicando cadeado: 
+
+- Definindo tamanho do cadeado.*/
+
 .botaoPag {
 
     width: 30%;
 }
+
+/* Explicando botaoPag: 
+
+- Div que contém o botão de pagar.*/
 
 table {
 
@@ -484,6 +588,9 @@ td{
     width: 30%;
 }
 
+/* Explicando table: 
+
+- Tabela que lista os alimentos selecionados.*/
 
 .bPag {
 
@@ -495,6 +602,10 @@ td{
     font-size: 15px;
 
 }
+
+/* Explicando bPag: 
+
+- Botão para pagar.*/
 
 
 /* >>> AQUI TERMINA O MAIN>>> */
@@ -668,12 +779,16 @@ footer {
 
 @media  screen and (max-width: 500px) {
 
+/* Responsividade aplicada para celulares. */
+
     body{
     
         width: 100%;
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+    /* HEADER */
     
     header{
     
@@ -749,6 +864,10 @@ footer {
         width: 5%;
         margin-right: 2%;
     }
+
+    /* HEADER */
+
+    /* FOOTER */
     
     .blocoUm{
     
@@ -770,6 +889,9 @@ footer {
         width: 50%;
         margin-bottom: 3%;
     }
+
+    /* FOOTER */
+    /* MAIN */
 
     .org{
 
@@ -834,4 +956,6 @@ footer {
         margin-top: 5%;
         margin-bottom: 5%;
     }
+
+    /* MAIN */
 }

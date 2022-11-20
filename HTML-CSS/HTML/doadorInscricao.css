@@ -157,6 +157,10 @@ header{
     display: none;
 }
 
+/* Explicando o navegation Alternativo:
+
+-É o meio de navegação de telas menores.*/
+
  /*<<< AQUI ACABA O HEADER*/
 
 main{
@@ -168,6 +172,10 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
 
 .blocoMain{
 
@@ -184,6 +192,10 @@ main{
     border-radius: 15px;
 }
 
+/* Explicando blocoMain: 
+
+- Primeiro bloco do main.*/
+
 form{
 
     width: 100%;
@@ -193,6 +205,10 @@ form{
     align-items: center;
     justify-content: space-evenly;
 }
+
+/* Explicando form: 
+
+- Todas os componentes do formulário.*/
 
 .titulos{
     margin-top: 1%;
@@ -205,6 +221,10 @@ form{
 
 }
 
+/* Explicando titulos: 
+
+- Div do formulário.*/
+
 .setForm{
 
     background-color: transparent;
@@ -216,14 +236,16 @@ form{
     border-radius: 15px;
     padding: 1%;
     margin-bottom: 2%;
-
-
 }
 
 .setForm::placeholder{
 
     color: white;
 }
+
+/* Explicando setForm: 
+
+- Caixa de entrada de dados.*/
 
 .bloco{
     width: 100%;
@@ -233,6 +255,10 @@ form{
     font-size: 20px;
     justify-content: flex-start;
 }
+
+/* Explicando bloco: 
+
+- Bloco com label e input.*/
 
 label{
     
@@ -245,6 +271,10 @@ label{
     align-items: center;
 }
 
+/* Explicando label: 
+
+- Descrição da caixa de entrada de dados.*/
+
 .botaoForm{
 
     width: 50%;
@@ -254,6 +284,10 @@ label{
     margin: 2%;
 
 }
+
+/* Explicando botaoForm: 
+
+- Div com os botões.*/
 
 .bForm{
 
@@ -272,6 +306,10 @@ label{
     font-size: 20px;
 
 }
+
+/* Explicando bForm: 
+
+- Os botões do form.*/
 
 /* >>> AQUI COMEÇA O FOOTER >>> */
 
@@ -447,6 +485,8 @@ footer{
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+    /* HEADER */
     
     header{
     
@@ -523,6 +563,10 @@ footer{
         width: 5%;
         margin-right: 2%;
     }
+
+    /* HEADER */
+
+    /* FOOTER */
     
     .blocoUm{
     
@@ -544,6 +588,10 @@ footer{
         width: 50%;
         margin-bottom: 3%;
     }
+
+    /* FOOTER */
+
+    /* MAIN */
 
     .blocoMain{
 
@@ -601,4 +649,5 @@ footer{
         padding-bottom: 3%;
     }
 
+    /* MAIN */
 }

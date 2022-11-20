@@ -159,15 +159,6 @@ header{
 
 /* >>> AQUI TERMINA O HEADER >>> */
 
- /*<<< AQUI ACABA O HEADER*/
-
-
-
-
-
-
-
-
 /* >>> AQUI COMEÇA O CONTEÚDO DA TELA >>> */
 
 .main{
@@ -266,19 +257,7 @@ header{
 
 <<<  E AQUI TERMINA O CONTEÚDO DA TELA */
 
-
-
-
-
-
-
-
-
 /* >>> AQUI COMEÇA O FOOTER >>> */
-
-
-
-/* AQUI COMEÇA O FOOTER */
 
 footer{
     grid-column: 1/2;
@@ -454,6 +433,8 @@ footer{
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+    /* HEADER */
     
     header{
     
@@ -527,6 +508,10 @@ footer{
         width: 5%;
         margin-right: 2%;
     }
+
+    /* HEADER */
+
+    /* FOOTER */
     
     .blocoUm{
     
@@ -548,6 +533,10 @@ footer{
         width: 50%;
         margin-bottom: 3%;
     }
+
+    /* FOOTER */
+
+    /* MAIN */
 
     .vitrine{
 
@@ -584,4 +573,6 @@ footer{
         padding: 8%;
         font-size: 18px ;
     }
+
+    /* MAIN */
 }

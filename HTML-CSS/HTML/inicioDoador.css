@@ -55,8 +55,6 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2%;
     margin-top: 0.5%;
-
-    
 }
 
 /* Explicando o texto-logo:
@@ -118,6 +116,7 @@ header{
     margin: 1vh;
     color: #B766BE;
     padding-left: 1%;
+    outline: none;
 }
 
 .pesquisa::placeholder{
@@ -157,6 +156,10 @@ header{
     display: none;
 }
 
+/* Explicando o navegation Alternativo:
+
+-É o meio de navegação de telas menores.*/
+
 /* >>> AQUI TERMINA O HEADER >>> */
 
 /* >>> AQUI COMEÇA O MAIN >>> */
@@ -173,6 +176,10 @@ main{
     align-items: center;
 }
 
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
+
 .ongs{
 
     width: 50%;
@@ -185,6 +192,10 @@ main{
 
 }
 
+/* Explicando ongs: 
+
+- Container que comporta todos os componentes sobre as ongs.*/
+
 .imgOng{
 
     margin-top: 3%;
@@ -192,12 +203,20 @@ main{
 
 }
 
+/* Explicando imgOng: 
+
+- Alimnhamento das imagens.*/
+
 .projeto{
 
     width: 30%;
     clip-path: circle(50%);
     margin-left: 1%;
 }
+
+/* Explicando projeto: 
+
+- Imagens das ongs participantes. */
 
 
 .ultimasMat{
@@ -209,6 +228,10 @@ main{
     height: 100%;
 }
 
+/* Explicando ultimasMat:
+
+- É a div que contém tudo das matérias.*/
+
 .materias{
 
     display: flex;
@@ -218,6 +241,10 @@ main{
     justify-content: center;
     height: 100%;
 }
+
+/* Explicando materias:
+
+- É a div que reúne as seções das matérias.*/
 
 .materiaBox{
 
@@ -231,6 +258,10 @@ main{
     height: 80%;
 }
 
+/* Explicando materiaBox: 
+
+- É a div de seção das matérias.*/
+
 .imgMateria{
 
     width: 70%;
@@ -238,9 +269,28 @@ main{
     margin-bottom: 7%;
 }
 
+/* Explicando imgMateria:
+
+- É a imagem exposta na matéria.*/
+
 .tituloMat{
 
     margin-bottom: 5%;
+}
+
+/*Explicando tituloMat:
+
+- É o título em negrito no box de cada matéria.*/
+
+.linkMat{
+
+    text-decoration: none;
+    color: black;
+}
+
+.linkMat::after{
+
+    color: black;
 }
 
 /* >>> AQUI TERMINA O MAIN >>> */
@@ -422,6 +472,8 @@ footer{
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
+
+    /* HEADER */
     
     header{
     
@@ -495,6 +547,10 @@ footer{
         width: 5%;
         margin-right: 2%;
     }
+
+    /* HEADER */
+
+    /* FOOTER */
     
     .blocoUm{
     
@@ -516,6 +572,10 @@ footer{
         width: 50%;
         margin-bottom: 3%;
     }
+
+    /* FOOTER */
+
+    /* MAIN */
 
     .ultimasMat{
 
@@ -562,5 +622,7 @@ footer{
         width: 70%;
         margin-bottom: 5%;
     }
+
+    /* MAIN */
     
 }

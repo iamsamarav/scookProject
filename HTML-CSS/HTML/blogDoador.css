@@ -118,6 +118,7 @@ header{
     margin: 1vh;
     color: #B766BE;
     padding-left: 1%;
+    outline: none;
 }
 
 .pesquisa::placeholder{
@@ -157,10 +158,14 @@ header{
     display: none;
 }
 
+/* Explicando o navegation Alternativo:
+
+-É o meio de navegação de telas menores.*/
+
+
 /* >>> AQUI TERMINA O HEADER >>> */
 
 /* >>> AQUI COMEÇA O MAIN >>> */
-
 
 
 main{
@@ -172,6 +177,10 @@ main{
     flex-direction: column;
     align-items: center;
 }
+
+/* Explicando o main:
+
+- Definimos sua posição no grid, seu tamanho e posição.*/
 
 .inscricao{
 
@@ -185,6 +194,11 @@ main{
     margin-bottom: 2%;
     height: 100%;
 }
+
+/* Explicando a inscrição:
+
+- É o bloco que contém o título e o box de inscrição;
+- Alinhamento, margens e tamanhos foram definidos.*/
 
 .boxInform{
 
@@ -200,8 +214,12 @@ main{
     margin-bottom: 2%;
     border-radius: 15px;
     height: 100%;
-
 }
+
+/* Explicando boxInform:
+
+- É a div com a explicação da inscrição e o botão;
+- Cor do texto, preenchimento, alinhamento, borda e cor de fundo definidos.*/
 
 .inscrevaSe{
 
@@ -213,11 +231,19 @@ main{
     
 }
 
+/* Explicando inscrevaSe:
+
+- É a div que contém o botão de inscrição.*/
+
 .textoInform{
 
     width: 50%;
 
 }
+
+/* Explicando textoInform:
+
+- É a div que contém o texto do box de inscrição.*/
 
 .btInscrevaSe{
 
@@ -235,6 +261,10 @@ main{
     color: black;
 }
 
+/* Explicando btInscrevaSe:
+
+- É o botão de inscrição.*/
+
 .ultimasMat{
 
     display: flex;
@@ -243,6 +273,10 @@ main{
     font-family: Arial, Helvetica, sans-serif;
     height: 100%;
 }
+
+/* Explicando ultimasMat:
+
+- É a div que contém tudo das matérias.*/
 
 .materias{
 
@@ -253,6 +287,10 @@ main{
     justify-content: center;
     height: 100%;
 }
+
+/* Explicando materias:
+
+- É a div que reúne as seções das matérias.*/
 
 .materiaBox{
 
@@ -266,6 +304,10 @@ main{
     height: 80%;
 }
 
+/* Explicando materiaBox: 
+
+- É a div de seção das matérias.*/
+
 .imgMateria{
 
     width: 70%;
@@ -273,12 +315,29 @@ main{
     margin-bottom: 7%;
 }
 
+/* Explicando imgMateria:
+
+- É a imagem exposta na matéria.*/
+
 .tituloMat{
 
     margin-bottom: 5%;
 }
 
+/*Explicando tituloMat:
 
+- É o título em negrito no box de cada matéria.*/
+
+.linkMat{
+
+    text-decoration: none;
+    color: black;
+}
+
+.linkMat::after{
+
+    color: black;
+}
 
 /* >>> AQUI TERMINA O MAIN >>> */
 
@@ -452,12 +511,16 @@ footer{
 
 @media screen and (max-width:500px){
 
+/* Responsividade aplicada para telas de celulares. */
+
 body{
 
     width: 100%;
     height: 100vh;
     grid-template-rows: 1fr 2fr 0.5fr;
 }
+
+/* HEADER */
 
 header{
 
@@ -532,6 +595,10 @@ header{
     margin-right: 2%;
 }
 
+/* HEADER */
+
+/* FOOTER */
+
 .blocoUm{
 
     display: none;
@@ -552,6 +619,10 @@ header{
     width: 50%;
     margin-bottom: 3%;
 }
+
+/* FOOTER */
+
+/* MAIN */
 
 .inscricao{
 
@@ -619,3 +690,5 @@ header{
 }
 
 }
+
+/* MAIN */
