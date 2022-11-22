@@ -20,24 +20,25 @@
 
             <div class="form">
                 <form action="">
-                    <label id="titulo" for="#">CPF/CNPJ</label>
+                    <label id="userLabel" for="usuario">CPF/CNPJ</label>
                     <div class="wid-input">
-                        <input type="text" placeholder="Digite seu CPF/CNPJ">
+                        <input type="text" id="usuario" placeholder="Digite seu CPF/CNPJ">
                     </div>
 
-                    <label for="#">Senha</label>
+                    <label id="senhaLabel" for="senha">Senha</label>
                     <div class="wid-input">
-                        <input type="password" placeholder="Digite sua senha">
+                        <input type="password" id="senha" placeholder="Digite sua senha">
                     </div>
 
                     <a href="#">Esqueçeu a senha?</a>
 
                     <div class="btn">
-                        <button class="butao">Entrar</button>
-                    </div>
+                        <button class="butao" onclick="entrar()">Entrar</button>
+                    </div>                    
                 </form>
             </div> <!--form-->
         </div> <!--Container-right-->
     </div> <!--Container-->
 </body>
+<script src="loginDoador.js"></script>
 </html>

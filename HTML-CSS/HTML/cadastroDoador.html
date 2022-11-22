@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="cadastroDoador.css">
     <title>Scook - Cadastre-se como doador</title>
-    <script src="cadastroDoador.js"></script>
+    <!-- <script src="cadastroDoador.js"></script> -->
 </head>
 
 <body>
@@ -25,27 +25,27 @@
                 <img  class="img" src="img/logoscook.png" alt="Logo Scook">
 
                 <form action="">
-                    <label class="Inform" id="titulo" for="titulo">Nome</label>
+                    <label class="Inform" id="labelNome" for="nome">Nome</label>
                     <div class="wid-input">
                         <input class="input" type="text" id="nome" placeholder="Digite o nome da instituição aqui">
                     </div>
 
-                    <label class="Inform" id="titulo" for="#">E-mail</label>
+                    <label class="Inform" id="labelEmail" for="email">E-mail</label>
                     <div class="wid-input">
                         <input type="email" id="email" placeholder="Digite o e-mail da instituição aqui">
                     </div>
 
-                    <label class="Inform" id="titulo" for="#">CPF/CNPJ</label>
+                    <label class="Inform" id="labelCpf" for="cpf">CPF/CNPJ</label>
                     <div class="wid-input">
                         <input type="number" id="cpf" placeholder="Digite aqui seu CPF/CNPJ">
                     </div>
 
-                    <label class="Inform" for="#">Senha</label>
+                    <label class="Inform" id="labelSenha" for="senha">Senha</label>
                     <div class="wid-input">
                         <input type="password" id="senha" placeholder="Digite uma senha aqui">
                     </div>
 
-                    <label class="Inform" for="#">Confirmar a senha</label>
+                    <label class="Inform" id="labelConfirmSenha" for="confirmsenha">Confirmar a senha</label>
                     <div class="wid-input">
                         <input type="password" id="confirmsenha" placeholder="Confirme a senha aqui">
                     </div>
@@ -61,6 +61,8 @@
         <!--Container-right-->
     </div>
     <!--Container-->
-</body>
 
+
+</body>
+<script src="cadastroDoador.js"></script>
 </html>
