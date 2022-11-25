@@ -1,0 +1,11 @@
+.extend{
+    width: 1000px;
+}
+.bblue{
+    background-color: var(--color--blue--2) !important;
+    margin-bottom: 50px;
+}
+
+.up{
+    margin-top: -40px;
+}

@@ -1,0 +1,394 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-auto-rows: 1fr;
+    box-sizing: border-box;
+
+}
+
+/* Explicando o body:
+
+- Tirou-se todas as margens e paddings;
+- Definimos como padrão de organização da página o GRID;
+- Definimos 2 colunas de tamanhos diferentes e 1 única linha.*/
+
+
+/* >>> AQUI COMEÇA A PRIMEIRA COLUNA >>> */
+
+.container-left {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* 
+- Criou-se um container para a primeira coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão.*/
+
+.h3{
+    font-size: 25px;
+}
+
+/* - Definimos o tamanho das letras que ocupa a primeira coluna; .*/
+
+.botao{
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    background-color: #B766BE;
+    border: none;
+    padding: 4%;
+    border-radius: 50px;
+    margin: 1%;
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    transition: 0.4s;
+}
+
+/* 
+- Definimos a largura do botão;
+- Definimos a cor dos nossos botões da primeira coluna;
+- O arredondamento de suas bordas;
+- Utilizamos o margin para espaçar os itens;
+- Tiramos a decoração do texto do botão;
+- Colocamos um efeito de animação com o transition */
+
+.botao:hover{
+    background-color: #369FFF;
+}
+
+/*
+ - Aplicou-se mudanças quando o cursor passar por cima do botão.
+ - Agora será possivel ver o efeito de animação do transition :) */
+
+/* >>> AQUI COMEÇA A SEGUNDA COLUNA >>> */
+
+.container-right {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #369FFF; 
+    color: white;
+}
+
+/* 
+- Criou-se um container para a segunda coluna do nosso GRID;
+- Ocupa 100% do espaço da coluna e toda a sua altura;
+- Delimitamos a coluna que usaremos;
+- Usamos o padrão flex dentro do container para posicionarmos os itens;
+- Definimos a fonte padrão;
+- Definimos a cor do texto.*/
+
+
+
+/* >>> EXPLICANDO O CARROSSEL DE IMAGENS DA SEGUNDA COLUNA >>> */
+
+.slider{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*
+- Definimos o .slider com a mesma ocupação de espaço e altura da segunda coluna;
+- Colocamos um overflow: hidden; para iniciar o efeito de carrossel, sem exibir barra de rolagem na tela, 
+  mostrando somente a imagem checada e escondendo as demais;
+*/
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+/*
+- Colocamos um display: flex; para deixar as imagens um do lado da outra;
+- Complementamos e definimos um width suficiente para esconder de fato as outras imagens que estão ao lado;
+- Você pode testar e mininuir o tamanho do width para entender melhor;
+- Colocamos o height da mesma altura da div class anterior;
+*/
+
+.slides input{
+    display: none;
+}
+
+/*
+- Colocamos um display: none; para esconder os nossos inputs radio;
+*/
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: .6s;
+}
+
+/*
+- Complementamos e definimos um width suficiente para esconder as imagens que estão ao lado;
+- Colocamos um transition para dar um efeito de animação de slide quando mudar a imagem;
+*/
+
+.slide img{
+    width: 100%;
+    height: 95vh;
+}
+
+/*
+- Definimos o espaço e altura que cada imagem terá;
+*/
+
+.manual-navigation{
+    position: absolute;
+    width: 100%;
+    margin-top: -8%;
+    justify-content: center;
+    display: flex;
+}
+
+/* defifindo a posição do manual de navegação:
+
+- Definimos o espaço com o mesmo tamanho do .slider;
+*/
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*
+- estilizamos os botões que mudarão os slides da tela;
+*/
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+/*
+- Definimos um margin-right para cada botão (MENOS NO ULTIMO);
+*/
+
+.manual-btn:hover{
+    background-color: #B766BE;
+}
+
+/*
+- Definimos a cor do botão quando o mouse passar por cima;
+*/
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+/*
+- Quando o primeiro botão estiver checado, a primeira imagem do slide aparecerá;
+- ainda no HTML, definimos que ao entrar na página, o primeiro botão já estará checado automaticamente :)
+*/
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+/*
+- Quando o segundo botão estiver checado, a segunda imagem do slide aparecerá;
+*/
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+/*
+- Quando o terceiro botão estiver checado, a terceira imagem do slide aparecerá;
+*/
+
+
+
+/* >>> ESTILIZAÇÃO PARA INDICAR QUAL BOTÃO ESTÁ ATIVO >>> */
+
+.navigation-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 610px;
+    justify-content: center;
+    display: flex;
+}
+
+/*
+- Copiamos e colamos todas as estilizações usadas em .manual-navigation;
+*/
+
+.navigation-auto div{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/*
+- Copiamos e colamos todas as estilizações usadas em .manual-btn; 
+*/
+
+.navigation-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+/*
+- Copiamos e colamos todas as estilizações usadas em .manual-btn:not; 
+*/
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #B766BE;
+}
+
+/*
+- Quando o primeiro botão estiver checado, o fundo mudará de cor;
+*/
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #B766BE;
+}
+
+/*
+- Quando o segundo botão estiver checado, o fundo mudará de cor;
+*/
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #B766BE;
+}
+
+/*
+- Quando o terceiro botão estiver checado, o fundo mudará de cor;
+*/
+
+.containerTop{
+
+    display: none;
+}
+
+.auto-btn1{
+    display: none;
+}
+
+.auto-btn2{
+
+    display: none;
+}
+
+.auto-btn3{
+
+    display: none;
+}
+
+p{
+    display: none;
+}
+
+.containerBottom{
+
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+
+    body{
+
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+
+    .container-right{
+
+        display: none;
+    }
+
+    .h3{
+        margin: 1%;
+    }
+    
+    .botao{
+
+        width: 50%;
+    }
+
+    .container-left{
+
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .containerTop{
+
+        display: flex;
+        grid-row: 1/2;
+        grid-column: 1/3;
+        width: 100%;
+        background-color: #369FFF;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .logo{
+
+        width: 40%;
+    }
+
+    p{
+        display: flex;
+        width: 80%;
+        text-align: center;
+        font-weight: bold;
+        padding: 2%;
+        border-radius: 15px;
+    }
+
+    .containerBottom{
+        
+        grid-column: 1/3;
+        grid-row: 3/4;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #369FFF;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: column;
+
+    }
+
+    a{
+        margin-bottom: 4%;
+        color: white;
+    }
+}
