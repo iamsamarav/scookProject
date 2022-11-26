@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@
             <div class="filter">
 
                 <div class="blocoUmMain">
-                    <h5>175 tickets</h5>
+                    <h5 id="qtdTickets">200 Tickets</h5>
                     <img class="ticket" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
@@ -78,7 +78,7 @@
 
                 <div class="inscrevaSe">
 
-                    <a href="doadorInscricao.html" class="btInscrevaSe">Confirmar</a>
+                    <a id='botao' href="doadorInscricao.html"  class="btInscrevaSe">Confirmar</a>
 
                 </div>
             </div>
@@ -137,6 +137,26 @@
         </div>
 
     </footer>
+
+    <script>
+
+        //Evento de click, resultando na subtração dos tickets.
+        var contador = document.querySelector('#qtdTickets');
+        document.querySelector('#botao').addEventListener('click', function() {
+            var subtrair = parseInt(contador.textContent) - 25;
+            contador.textContent = subtrair +'Tickets'
+        })
+
+        //Evento de click, resultando na subtração dos itens do carrinho.
+        var contadorCarrinho = document.querySelector('#qtdItens');
+        document.querySelector('#botao').addEventListener('click', function() {
+            var subtrairItens = parseInt(contadorCarrinho.textContent) - 5;
+            contadorCarrinho.textContent = subtrairItens
+        })
+
+
+
+    </script>
 
 </body>
 

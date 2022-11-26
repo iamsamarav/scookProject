@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -47,10 +47,22 @@
                     <img class="ticket" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <div class="blocoDoisMain">
-                    <img class="carro" src="img/vista-lateral-vazia-do-carrinho-de-compras.png" alt="">
-                    <h6 id="qtdItens">0</h6>
+                <div class="blocoDoisMain" >
+                    
+                    <button id="botaoCarrinho" onclick="abrirLista('divLista')"><img class="carro" src="img/vista-lateral-vazia-do-carrinho-de-compras.png" alt=""></button>
+                    
+                    <span id="qtdItens">0</span>
+                    
+                <div id="divLista" style="display:none;">
+                    <h1 class="hLista">Itens adicionados:</h1>
+                     
+
+                    <a href="receberDoacaoFinal.html"><button id="botaoComprar">COMPRAR</button></a>
                 </div>
+
+
+                </div>
+ 
             </div>
 
         </div>
@@ -127,7 +139,14 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm7')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm7" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton7" type="button" onclick="Fechar('divConfirm7')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm7')">
+                </div>
+                
 
             </div>
 
@@ -141,7 +160,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm8')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm8" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton8" type="button" onclick="Fechar('divConfirm8')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm8')">
+                </div>
 
             </div>
             <div class="produto">
@@ -153,7 +178,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm9')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm9" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton9" type="button" onclick="Fechar('divConfirm9')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm9')">
+                </div>
 
             </div>
 
@@ -169,7 +200,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm6')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm6" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton6" type="button" onclick="Fechar('divConfirm6')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm6')">
+                </div>
 
             </div>
 
@@ -183,7 +220,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm5')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm5" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton5" type="button" onclick="Fechar('divConfirm5')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm5')">
+                </div>
 
             </div>
             <div class="produto">
@@ -195,7 +238,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm4')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm4" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton4" type="button" onclick="Fechar('divConfirm4')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm4')">
+                </div>
 
             </div>
 
@@ -212,7 +261,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm3')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm3" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton3" type="button" onclick="Fechar('divConfirm3')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm3')">
+                </div>
 
             </div>
 
@@ -227,7 +282,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm2')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm2" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton2" type="button" onclick="Fechar('divConfirm2')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm2')">
+                </div>
 
             </div>
             <div class="produto">
@@ -239,7 +300,13 @@
                     <img class="ticket-p" src="img/voucher-de-desconto.png" alt="">
                 </div>
 
-                <button>Adicionar ao carrinho</button>
+                <button onclick="Abrir('divConfirm')">Adicionar ao carrinho</button>
+
+                <div id="divConfirm" style="display:none;">
+                <p><b>Deseja adicionar este item ao carrinho?</b></p>
+                <button id="button" class="inputButton" type="button" onclick="Fechar('divConfirm')">Sim</button>
+                <input id="button" type="button" value="Não" onclick="Fechar('divConfirm')">
+                </div>
 
             </div>
 
@@ -298,6 +365,261 @@
         </div>
 
     </footer>
+
+    <script>
+
+    //Evento ao clicar no botão "Adicionar ao carrinho" e abrir tela(div) de Confirmação. 
+    function Abrir(divConfirm) {
+        var divadicionar = document.getElementById(divConfirm).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm).style.display = 'block';
+        } 
+    }
+    
+    function Abrir(divConfirm2) {
+        var divadicionar = document.getElementById(divConfirm2).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm2).style.display = 'block';
+        } 
+    }
+
+    function Abrir(divConfirm3) {
+        var divadicionar = document.getElementById(divConfirm3).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm3).style.display = 'block';
+        } 
+    }
+
+    function Abrir(divConfirm4) {
+        var divadicionar = document.getElementById(divConfirm4).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm4).style.display = 'block';
+        } 
+    }
+
+    function Abrir(divConfirm5) {
+        var divadicionar = document.getElementById(divConfirm5).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm5).style.display = 'block';
+        } 
+    }
+
+    function Abrir(divConfirm6) {
+        var divadicionar = document.getElementById(divConfirm6).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm6).style.display = 'block';
+        } 
+    }
+   
+    function Abrir(divConfirm7) {
+        var divadicionar = document.getElementById(divConfirm7).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm7).style.display = 'block';
+        } 
+    }
+
+    function Abrir(divConfirm8) {
+        var divadicionar = document.getElementById(divConfirm8).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm8).style.display = 'block';
+        } 
+    }
+
+    function Abrir(divConfirm9) {
+        var divadicionar = document.getElementById(divConfirm9).style.display;
+        if (divadicionar == 'none') {
+            document.getElementById(divConfirm9).style.display = 'block';
+        } 
+    }
+
+    //Opção "Não" na tela de confirmação, resultando no fechamento da tela.
+    function Fechar(divConfirm) {
+        var opcoes = document.getElementById(divConfirm).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm2) {
+        var opcoes = document.getElementById(divConfirm2).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm2).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm3) {
+        var opcoes = document.getElementById(divConfirm3).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm3).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm4) {
+        var opcoes = document.getElementById(divConfirm4).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm4).style.display = 'none';
+        } 
+    }
+    
+    function Fechar(divConfirm5) {
+        var opcoes = document.getElementById(divConfirm5).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm5).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm6) {
+        var opcoes = document.getElementById(divConfirm6).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm6).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm7) {
+        var opcoes = document.getElementById(divConfirm7).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm7).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm8) {
+        var opcoes = document.getElementById(divConfirm8).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm8).style.display = 'none';
+        } 
+    }
+
+    function Fechar(divConfirm9) {
+        var opcoes = document.getElementById(divConfirm9).style.display;
+        if (opcoes == 'block') {
+            document.getElementById(divConfirm9).style.display = 'none';
+        } 
+    }
+
+
+    //Opção "Sim" na tela de confirmação, resultando no aumento do número do carrinho e fechando a tela em seguida.
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton2').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton2').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton2').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton3').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton3').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton3').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton4').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton4').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton4').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton5').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton5').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton5').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton6').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton6').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton6').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton7').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton7').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton7').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton8').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton8').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton8').style.display = 'none';
+        } 
+
+    })
+
+    var contador = document.querySelector('#qtdItens');
+    document.querySelector('.inputButton9').addEventListener('click', function() {
+        var numero = parseInt(contador.textContent) + 1;
+        contador.textContent = numero;
+
+        var opcoes = document.getElementById('.inputButton9').style.display;
+        if (opcoes == 'block') {
+            document.getElementById('.inputButton9').style.display = 'none';
+        } 
+
+    })
+    
+    //Evento do carrinho, quando clicado surgi uma tela(div) de lista com os itens adicionados
+
+    function abrirLista(divLista) {
+        var ListadoCarrinho = document.getElementById(divLista).style.display;
+        if (ListadoCarrinho == 'none') {
+            document.getElementById(divLista).style.display = 'block'
+        } else {
+            document.getElementById(divLista).style.display = 'none'
+        }
+    }
+
+
+
+    </script>
 
 </body>
 
