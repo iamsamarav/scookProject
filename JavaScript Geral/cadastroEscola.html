@@ -22,42 +22,41 @@
             <div class="form">
                 <img src="img/logoscook.png" alt="Logo Scook">
                 <form action="">
-                    <label class="Inform" id="titulo" for="#">Nome da instituição</label>
+                    <label class="Inform" id="instLabel" for="instituição">Nome da instituição</label>
                     <div class="wid-input">
                         <input type="text" placeholder="Digite o nome da instituição aqui">
                     </div>
 
-                    <label class="Inform" id="titulo" for="#">E-mail da instituição</label>
+                    <label class="Inform" id="emailLabel" for="emailInst">E-mail da instituição</label>
                     <div class="wid-input">
                         <input type="text" placeholder="Digite o e-mail da instituição aqui">
                     </div>
 
-                    <label class="Inform" id="titulo" for="#">Quantidade de alunos</label>
+                    <label class="Inform" id="alunosLabel" for="quantAlunos">Quantidade de alunos</label>
                     <div class="wid-input">
                         <input type="number" placeholder="Digite a quantidade aqui">
                     </div>
 
-                    <label class="Inform" for="#">Senha</label>
+                    <label class="Inform" id="passwordLabel" for="password">Senha</label>
                     <div class="wid-input">
                         <input type="password" placeholder="Digite uma senha aqui">
                     </div>
 
-                    <label class="Inform" for="#">Confirmar a senha</label>
+                    <label class="Inform" id="confirmeLabel" for="confirme">Confirmar a senha</label>
                     <div class="wid-input">
-                        <input type="password" placeholder="Confirme a senha aqui">
-
+                        <input type="password" id="confirmsenha" placeholder="Confirme a senha aqui">
                     </div>
 
                 </form>                        
                 <div class="btn">
-                            <button>Cadastrar</button>
-                        </div>
+                    <button onclick="cadastrar()">Cadastrar</button>
             </div>
             <!--form-->
         </div>
         <!--Container-right-->
     </div>
     <!--Container-->
+    <script src="cadastroEscola.js"></script>
 </body>
 
 </html>

@@ -20,24 +20,25 @@
 
             <div class="form">
                 <form action="">
-                    <label id="titulo" for="#">E-mail da instituição</label>
+                    <label id="emailLabel" for="emailInst">E-mail da instituição</label>
                     <div class="wid-input">
-                        <input type="text" placeholder="Digite seu e-mail">
+                        <input type="text" placeholder="Digite seu e-mail" id="e-mail">
                     </div>
 
-                    <label for="#">Senha</label>
+                    <label id="passwordLabel" for="password">Senha</label>
                     <div class="wid-input">
-                        <input type="password" placeholder="Digite sua senha">
+                        <input type="password" placeholder="Digite sua senha" id="senha">
                     </div>
 
                     <a href="#">Esqueceu a senha?</a>
 
                     <div class="btn">
-                        <button class="butao">Entrar</button>
+                        <button class="botao" onclick="entrar()">Entrar</button>
                     </div>
                 </form>
             </div> <!--form-->
         </div> <!--Container-right-->
     </div> <!--Container-->
+    <script src="loginAluno.js"></script>
 </body>
 </html>
