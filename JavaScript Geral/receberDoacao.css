@@ -255,7 +255,7 @@ main {
 
 .carro {
 
-    height: 30%;
+    height: 30px;
 
 }
 
@@ -710,4 +710,64 @@ footer {
     }
 
     /* MAIN */
+}
+
+
+/* Estas estilizações abaixo foram criadas junto da parte de JavaScript. obs: Não possuem responsividade*/
+
+#divConfirm, #divConfirm2, #divConfirm3, #divConfirm4, #divConfirm5, #divConfirm6, #divConfirm7, #divConfirm8, #divConfirm9 {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.288);
+}
+
+#botaoCarrinho {
+    background-color: #b766be00;
+    width: 10%;
+}
+
+#button {
+    width: 25%;
+    background-color: #B766BE;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 5px;
+    padding: 3%;
+}
+
+#button:hover {
+    background-color: #348cdf;
+}
+
+#divLista {
+    background-color:#369FFF;
+    color: white;
+    border-radius: 15px;
+    margin-top: 300px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 10px;
+    position: relative;
+    
+}
+
+#botaoComprar {
+    width: 150px;
+    height: 50px;
+    
+    
+}
+
+.hLista {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 1px;
+    
 }

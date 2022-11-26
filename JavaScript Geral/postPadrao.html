@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="postPadrao.css">
     <title>Scook</title>
+    
 </head>
 
-<body>
-
-    
+<body>  
     <header>
 
         <img class="logo" src="img/logoscook.png">
         <h4 class="texto-logo">Juntos pela erradicação da fome</h4>
         
         <div class="navegationAlternativa">
-
             <div class="alinhamentoMenu"> 
                 <a class="linkCel"><img class="menu" src="img/menu.png" alt=""></a>
                 <button class="botaoCel"> MENU </button>
             </div>
-
-
         </div>
 
         <div class="navegation">
@@ -38,19 +34,19 @@
     </header>
 
     <main>
+        <input type="button" id="Button" value="Exibir" onclick="myFunction()">
 
         <div class="box">
 
-            <div class="boxImagem">
+            <div id="imagem" class="boxImagem"></div>
 
-                <img src="img/aleatoria.jpg" alt="" class="capa">
-
-            </div>
-
+                
             <div class="boxTitulo">
 
-                <h2>Título</h2>
-                <h3>Subtítulo</h3>
+                <h2 id="viewSessionSotorage"></h2>
+            
+                <h3 id="viewSessionSotorage2"></h3>
+                
 
             </div>
 
@@ -58,15 +54,9 @@
 
         <div class="post">
 
-            <h2 class="autor">
-                Publicado por: João Gomes
-            </h2>
-
-            <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla faucibus at risus vitae ultricies. Nulla feugiat, sapien at ullamcorper vulputate, erat nulla laoreet sapien, vel hendrerit mauris mauris sed turpis. In at posuere lectus. Vestibulum sodales metus nibh, luctus dignissim metus laoreet non. Mauris tempor quis quam nec tincidunt. Aenean mollis odio in tortor efficitur, nec viverra nunc lacinia. Maecenas fringilla ornare lorem imperdiet varius. Cras vel erat magna. Sed suscipit, arcu quis vulputate tincidunt, augue eros lacinia purus, eget convallis nisl tellus eu lacus.
-
-                 Nulla et ipsum eget enim consectetur posuere. Duis in aliquam sem, ac semper nisl. Nullam volutpat at nibh vulputate fermentum. Pellentesque convallis, arcu eget pharetra gravida, ligula eros commodo ligula, ullamcorper sagittis turpis mi quis risus. Nunc mi dui, laoreet ac aliquam non, mollis at justo. Sed dapibus erat lobortis massa pellentesque viverra. Maecenas pretium erat eu diam aliquam ornare. Integer vel tempus arcu. Etiam ornare ipsum ac urna finibus, nec pulvinar velit auctor. Mauris tristique scelerisque eleifend. Quisque imperdiet sagittis diam at molestie. Quisque ultricies dapibus mattis. Nam viverra varius nisl quis blandit.
-            </p>
+            <h2 id="public">Publicado por:</h2>
+            <h2 id="viewSessionSotorage4" class="autor"></h2>       
+            <p id="viewSessionSotorage3"></p>
 
         </div>
 
@@ -123,6 +113,51 @@
         </div>
 
     </footer>
+
+    <script>
+        window.alert('Seu post foi criado com sucesso!')
+
+        var btn2 = document.querySelector('#Button')
+
+        btn2.addEventListener('click', function(){
+        var div = document.querySelector('#Button')
+
+            if(div.style.display === 'none') {
+                div.style.display = 'block'
+            } else {
+                div.style.display = 'none'
+            }
+        })
+
+        var imagem = document.getElementById('imagem')
+
+        function myFunction() {
+        return imagem.innerHTML = '<img src="img/aleatoria.jpg" class="capa" />'
+        }
+
+        btn2.addEventListener('click', function() {
+        var paragrafo = document.querySelector('#viewSessionSotorage');
+        paragrafo.textContent = localStorage.getItem('valueText');
+        })
+
+        btn2.addEventListener('click', function() {
+        var paragrafo = document.querySelector('#viewSessionSotorage2');
+        paragrafo.textContent = localStorage.getItem('valorText');
+        })
+
+        btn2.addEventListener('click', function () {
+        var paragrafo = document.querySelector('#viewSessionSotorage3')
+        paragrafo.textContent = localStorage.getItem('areaText')
+        })
+
+        btn2.addEventListener('click', function () {
+        var paragrafo = document.querySelector('#viewSessionSotorage4')
+        paragrafo.textContent = localStorage.getItem('valueAutor')
+        var publi = document.querySelector('#public', + paragrafo)
+        })
+
+
+    </script>
 
 </body>
 </html>
