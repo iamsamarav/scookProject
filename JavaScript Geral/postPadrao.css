@@ -157,10 +157,6 @@ header{
     display: none;
 }
 
-/* Explicando o navegation Alternativo:
-
--É o meio de navegação de telas menores.*/
-
 /* >>> AQUI TERMINA O HEADER >>> */
 
  /*<<< AQUI ACABA O HEADER*/
@@ -175,9 +171,25 @@ main{
     align-items: center;
 }
 
-/* Explicando o main:
+#Button {
+    margin-top: 2%;
+    background-color: #B766BE;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+    font-size: 17px;
+    padding-bottom: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-- Definimos sua posição no grid, seu tamanho e posição.*/
+#Button:hover {
+    background-color: #348cdf;
+}
 
 .box{
 
@@ -193,20 +205,12 @@ main{
 
 }
 
-/* Explicando box:  
-
-- É o box que contém o boxImagem e o boxTitulo.*/
-
 .boxImagem{
 
     height: 100%;
     display: flex;
     align-items: center;
 }
-
-/* Explicando boxImagem: 
-
-- É o box que contém a capa da matéria.*/
 
 .boxTitulo{
 
@@ -216,30 +220,19 @@ main{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Explicando boxTitulo: 
-
-- É o box que contém o titulo e o subtitulo.*/
-
 .capa{
 
     height: 90%;
     clip-path: circle(50%);
+    
 
 }
-
-/* Explicando a capa: 
-
-- É a estilização da capa da matéria.*/
 
 .post{
 
     width: 70%;
     height: 65%;
 }
-
-/* Explicando post:
-
-- É a div que comporta o texto.*/
 
 p{
 
@@ -248,10 +241,6 @@ p{
     text-align: justify;
 }
 
-/* Explicando p:  
-
-- É a definição padrão para o texto.*/
-
 h2{
 
     font-family: Arial, Helvetica, sans-serif;
@@ -259,10 +248,6 @@ h2{
     margin-bottom: 1%;
     margin-top: 1%;
 }
-
-/* Explicando o h2: 
-
-- É a definição padrão para o autor.*/
 
 /* AQUI COMEÇA O FOOTER */
 
@@ -439,8 +424,6 @@ footer{
         height: 100vh;
         grid-template-rows: 1fr 2fr 0.5fr;
     }
-
-    /* HEADER */
     
     header{
     
@@ -514,10 +497,6 @@ footer{
         width: 5%;
         margin-right: 2%;
     }
-
-    /* HEADER */
-
-    /* FOOTER */
     
     .blocoUm{
     
@@ -549,10 +528,6 @@ footer{
         width: 50%;
         margin-bottom: 3%;
     }
-
-    /* HEADER */
-
-    /* MAIN */
 
     .capa{
 
@@ -592,6 +567,4 @@ footer{
         font-size: 20px;
         margin-bottom: 5%;
     }
-
-    /* MAIN */
 }
