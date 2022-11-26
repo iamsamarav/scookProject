@@ -1,6 +1,4 @@
 // Variáveis
-
-
 let instituicao = document.querySelector('#instituição')
 let instLabel = document.querySelector('#instLabel')
 let validInst = false
@@ -21,13 +19,11 @@ let confirme = document.querySelector('#confirme')
 let confirmeLabel = document.querySelector('#confirmeLabel')
 let validConfirme = false
 
-
 // Neste trecho ocorrerá o processo de validação e arrecadação dos dados do usuário (as escolas)
-
 instituicao.addEventListener('keyup', () => {
    if(instituicao.value.length <= 2){
         instLabel.setAttribute('style', 'color: red')
-        instLabel.innerHTML = 'Instituição *digite mais de 3 caracteres'
+        instLabel.innerHTML = 'Digite o nome da instituição'
         validInst = false
    } else{
         instLabel.setAttribute('style', 'color: green')
@@ -49,13 +45,13 @@ emailInst.addEventListener('keyup', () => {
  })
 
  quantAlunos.addEventListener('keyup', () => {
-    if(quantAlunos.value.length < 11){
+    if(quantAlunos.value.length <= 2){
         alunosLabel.setAttribute('style', 'color: red')
-        alunosLabel.innerHTML = 'CPF/CNPJ *insira números completos'
+        alunosLabel.innerHTML = 'Insira o número total'
         validAluno = false
     } else{
         alunosLabel.setAttribute('style', 'color: green')
-        alunosLabel.innerHTML = 'CPF/CNPJ ✔'
+        alunosLabel.innerHTML = 'Alunos ✔'
         validAluno = true
     }
  })
@@ -75,7 +71,7 @@ emailInst.addEventListener('keyup', () => {
  confirme.addEventListener('keyup', () => {
     if(confirme.value != senha.value){
         confirmeLabel.setAttribute('style', 'color: red')
-        confirmeLabel.innerHTML = 'Confirme a sua senha *senhas diferentes'
+        confirmeLabel.innerHTML = 'Confirme a sua senha'
         validConfirme = false
     } else{
         confirmeLabel.setAttribute('style', 'color: green')
@@ -87,14 +83,12 @@ emailInst.addEventListener('keyup', () => {
 
 // *Utilizamos o armazenamento local para guardar as imformações obtidas (o armazenamento foi realizado através do browser)
 // Apartir daqui, se todas as informações obtidas forem verdadeiras o usúario será encaminhado para a tela de 'login'...
-
-
 function cadastrar(){
     if(validInst && validEmail && validAluno && validSenha && validConfirme){
 
-        let listaUser = JSON.parse(localStorage.getItem('listaUser') || '[]')
+        let listaInst = JSON.parse(localStorage.getItem('listaInst') || '[]')
 
-        listaUser.push(
+        listaInst.push(
             {
                 instituicaoCad: instituicao.value,
                 emailInstCad: emailInst.value,
@@ -103,9 +97,9 @@ function cadastrar(){
             }
         )
 
-        localStorage.setItem('listaUser', JSON.stringify(listaUser))
+        localStorage.setItem('listaInst', JSON.stringify(listaInst))
         
-        window.location.href = '#'
+        window.location.href = 'loginAluno.html'
 
     } else {
         alert('Ocorreu alguma falha! Preencha com atenção todos os campos do fromulário')

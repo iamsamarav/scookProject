@@ -2,23 +2,24 @@
 
 
 function entrar(){
+    
     let emailInst = document.querySelector('#emailInst')
     let emailLabel = document.querySelector('#emailLabel')
 
     let password = document.querySelector('#password')
     let passwordLabel = document.querySelector('#passwordLabel')
 
-    let listaUser = []
+    let listaInst = []
 
     let instValid = {
 
         email: '',
         senha: ''
     }
+    
+    listaInst = JSON.parse(localStorage.getItem('listaInst'))
 
-    listaUser = JSON.parse(localStorage.getItem('listaInst'))
-
-    listaUser.forEach((item) => {
+    listaInst.forEach((item) => {
         if(emailInst.value == item.emailCad && password.value == item.senhaCad){
             instValid = {
                 email: item.emailCad,
@@ -33,7 +34,7 @@ function entrar(){
 
 
     if (emailInst.value == instValid.email && password.value == instValid.senha) {
-        window.location.href = '#'
+        window.location.href = 'inicioEscola.html'
         alert('Seu login foi efetuado com sucesso...')      
     } else {
         alert('E-mail ou senha incorretos, tente novamente!')
