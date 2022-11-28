@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="doadorDinheiro.css">
     <title>Scook</title>
+    <script src="doadorDinheiro.js" defer></script>
 </head>
 
 <body>
@@ -30,9 +31,9 @@
         <div class="navegation">
 
             <input class="pesquisa" type="text" placeholder="Pesquise aqui">
-            <a class="botao">Feed</a>
+            <a href="inicioDoador.html" class="botao">Home</a>
             <a class="botao">Blog</a>
-            <a class="botao">Doar</a>
+            <a href="doadorDinheiro.html" class="botao">Doar</a>
 
             <div class="item">
 
@@ -63,71 +64,8 @@
         </div>
 
 
-        <div class="container">
-
-            <div class="alinhamentoContainer">
-                <h3>Lista de produtos</h3>
-                <a class="setBut">
-                    <img class="seta" src="img/down.png" alt="">
-                </a>
-            </div>
-
-            <div class="submenuCont">
-
-                <div class="alinhamentoSubmenu">
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-
-                    <div class="elemento">
-                        <p>Arroz 1kg</p>
-                        <input type="checkbox">
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
+        <div class="container">                           
+            <h3>Lista de produtos</h3>                  
         </div>
 
         <div class="listaAlimentos">
@@ -135,40 +73,54 @@
             <table>
 
                 <tr>
-                    <th>Alimentos selecionados</th>
-                    <th>Quantidade</th>
+                    <th>Alimentos selecionados</th>                    
                     <th>Valor unitário</th>
+                    <th>Quantidade</th>
                 </tr>
 
                 <tr>
-                    <td>Arroz</td>
-                    <td>1</td>
-                    <td>R$ 5,00</td>
+                    <td>Arroz</td>                    
+                    <td>R$ 6,00</td>
+                    <td><input class="btQuantidade" id="valor1" type="number"></td>
                 </tr>
 
                 <tr>
-                    <td>Arroz</td>
-                    <td>1</td>
-                    <td>R$ 5,00</td>
+                    <td>Feijão</td>                    
+                    <td>R$ 9,00</td>
+                    <td><input class="btQuantidade" id="valor2" type="number"></td>
                 </tr>
 
                 <tr>
-                    <td>Arroz</td>
-                    <td>1</td>
+                    <td>Macarrão</td>                    
                     <td>R$ 5,00</td>
+                    <td><input class="btQuantidade" id="valor3" type="number"></td>
+                </tr>
+
+                <tr>
+                    <td>Açucar</td>                    
+                    <td>R$ 4,00</td>
+                    <td><input class="btQuantidade" id="valor4" type="number"></td>
+                </tr>
+
+                <tr>
+                    <td>Carne</td>                    
+                    <td>R$ 40,00</td>
+                    <td><input class="btQuantidade" id="valor5" type="number"></td>
                 </tr>
 
 
-            </table>
-
-        </div>
-
+            </table>           
+            
+        </div>        
+        <button class="botaoEnviar" id="botaoEnviar" onclick="capturar()">Adicionar produto</button>
         <div class="valorPagar">
 
             <h1>Total da doação:</h1>
 
             <div class="valor">
-                <h4>R$ 25,00</h4>
+                <h4>R$</h4>
+                <h4 id="valorDigitado"></h4>
+                <h4>,00</h4>
             </div>
 
         </div>

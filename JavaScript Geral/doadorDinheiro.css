@@ -559,9 +559,34 @@ main {
     width: 30%;
 }
 
+
 /* Explicando botaoPag: 
 
 - Div que contém o botão de pagar.*/
+
+.valor{
+    display: flex;
+}
+
+.btQuantidade{
+    width: 90px;
+    border-radius: 50px;
+    border-color: #369FFF;
+    text-align: center;
+}
+
+.botaoEnviar{
+    margin-top: 20px;
+    background-color: #369FFF;
+    border: none;
+    border-radius: 15px;
+    width: 25vh;
+    height: 100px;
+    padding: 11px 0px;
+    color: aliceblue;
+    font-size: large;
+}
+
 
 table {
 
