@@ -124,27 +124,25 @@
     </footer>
 
     <script>
-        
-        var text = document.querySelector('#inputText').value;
+        var btn = document.querySelector('#inputButton');
         
         btn.addEventListener('click', function(){
-        var btn = document.querySelector('#inputButton');
+        var text = document.querySelector('#inputText').value;
         localStorage.setItem('valueText', text);
         })
-
-        //Eventos e Salvamentos dos dados dos input's
-        var text = document.querySelector('#inputSubText').value;
+    
         btn.addEventListener('click', function(){
+        var text = document.querySelector('#inputSubText').value;    
         localStorage.setItem('valorText', text);
         })
 
-        var text = document.querySelector('#inputarea').value;
         btn.addEventListener('click', function() {
+        var text = document.querySelector('#inputarea').value;
         localStorage.setItem('areaText', text)
         })
-
-        var text = document.querySelector('#inputAutor').value;
+        
         btn.addEventListener('click', function() {
+        var text = document.querySelector('#inputAutor').value;
         localStorage.setItem('valueAutor', text)
         })
 
