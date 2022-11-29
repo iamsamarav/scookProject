@@ -124,11 +124,11 @@
     </footer>
 
     <script>
-        //Evento do botão "Exibir"
+        
         var text = document.querySelector('#inputText').value;
-        var btn = document.querySelector('#inputButton');
-
+        
         btn.addEventListener('click', function(){
+        var btn = document.querySelector('#inputButton');
         localStorage.setItem('valueText', text);
         })
 
