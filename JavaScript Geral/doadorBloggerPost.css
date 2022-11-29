@@ -190,6 +190,38 @@ display: none;
 
 - Div que comporta as opções dos links.*/
 
+.opcoesPerfil {
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    font-size: 20px;
+
+
+}
+
+/* Explicando o opcoesPerfil:
+
+- Div que comporta o alinhamento.*/
+
+.alinhamento {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #B766BE;
+    width: 200px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    height: 100px;
+}
+
+/* Explicando o alinhamento:
+
+- Div que comporta as opções dos links.*/
+
 .link-perfil{
     width: 10%;
     display: flex;
