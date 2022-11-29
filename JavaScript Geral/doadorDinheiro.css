@@ -136,6 +136,7 @@ header {
     align-items: center;
     cursor: pointer;
     margin-bottom: 0.5%;
+    color: white;
 }
 
 /* Explicando o botão do perfil:
@@ -148,6 +149,7 @@ header {
     display: block;
     z-index: 1;
     cursor: pointer;
+    color: white;
 
 }
 
@@ -167,6 +169,7 @@ header {
     justify-content: center;
     align-items: center;
     position: relative;
+    color: white;
 
 }
 
@@ -180,7 +183,7 @@ header {
     position: absolute;
     top: 100%;
     font-size: 20px;
-
+    color: white;
 
 }
 

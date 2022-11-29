@@ -25,10 +25,25 @@
 
         <div class="navegation">
             <input class="pesquisa" type="text" placeholder="Pesquise aqui">
-            <a class="botao">Feed</a>
-            <a class="botao">Blog</a>
-            <a class="botao">Doar</a>
-            <a class="link-perfil"><img class="perfil" src="img/icone-perfil-branco.png"></a>
+            <a href="inicioDoador.html" class="botao">Home</a>
+            <a href="blogDoador.html" class="botao">Blog</a>
+            <a href="doadorDinheiro.html" class="botao">Doar</a>
+            <div class="item">
+
+                <a class="link-perfil"><img class="perfil" src="img/icone-perfil-branco.png"></a>
+
+                <div class="opcoesPerfil">
+
+                    <div class="alinhamento">
+
+                        <a class="submenu" href="Perfil.html">Configurações</a>
+                        <a class="submenu" href="index.html">Sair da conta</a>
+                    </div>
+
+
+                </div>
+            </div>
+
     </header>
 
     <main>
@@ -52,7 +67,7 @@
             </div>
 
             <div class="formTexto">
-                <textarea class="texto" value="" id="inputarea" cols="30" rows="5">Digite aqui o texto da sua publicação</textarea>
+                <textarea class="texto" value="" id="inputarea" cols="30" rows="5" placeholder="Digite aqui o texto da sua publicação"></textarea>
 
                 <input type="button" id="inputButton" class="public" value="Salvar">
                 <a href="postPadrao.html" class="public">Publicar</a>
@@ -65,12 +80,12 @@
         <div class="blocoUm">
 
             <div class="secao">
-                <h4>Feed</h4>
+                <a class="link" href="inicioDoador.html"><h4>Home</h4></a>
             </div>
 
             <div class="secao">
                 <h4>Blog</h4>
-                <a class="link" href="">Pesquisar matérias</a>
+                <a class="link" href="">Leia o último post</a>
             </div>
 
             <div class="secao">
