@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="postPadrao.css">
+    <link rel="icon" href="img/iconScook.png">
     <title>Scook</title>
     
 </head>
@@ -26,9 +27,9 @@
         <div class="navegation">
 
             <input class="pesquisa" type="text" placeholder="Pesquise aqui">
-            <a class="botao">Feed</a>
-            <a class="botao">Blog</a>
-            <a class="botao">Doar</a>
+            <a href="inicioDoador.html" class="botao">Home</a>
+            <a href="blogDoador.html" class="botao">Blog</a>
+            <a href="doadorDinheiro.html" class="botao">Doar</a>
             <a class="link-perfil"><img class="perfil" src="img/icone-perfil-branco.png"></a>
         </div>
     </header>
@@ -39,15 +40,11 @@
         <div class="box">
 
             <div id="imagem" class="boxImagem"></div>
-
-                
+   
             <div class="boxTitulo">
-
                 <h2 id="viewSessionSotorage"></h2>
             
                 <h3 id="viewSessionSotorage2"></h3>
-                
-
             </div>
 
         </div>
@@ -67,7 +64,7 @@
         <div class="blocoUm">
 
             <div class="secao">
-                <h4>Feed</h4>
+                <h4>Home</h4>
             </div>
 
             <div class="secao">
@@ -89,7 +86,7 @@
 
             <div class="secao">
                 <h4>Contato</h4>
-                <h4>Email@email.com</h4>
+                <h4>SiteScook_Oficial@gmail.com</h4>
             </div>
         </div>
 
@@ -104,7 +101,7 @@
 
                 <img class="logo" src="img/logoscook.png" alt="">
 
-                <h6>Juntos pela erradicação da má alimentação</h6>
+                <h6>Juntos pela erradicação da fome</h6>
 
             </div>
 
@@ -117,7 +114,6 @@
     <script>
 
         var btn2 = document.querySelector('#Button')
-
         btn2.addEventListener('click', function(){
         var div = document.querySelector('#Button')
 
@@ -129,7 +125,6 @@
         })
 
         var imagem = document.getElementById('imagem')
-
         function myFunction() {
         return imagem.innerHTML = '<img src="img/aleatoria.jpg" class="capa" />'
         }
@@ -154,7 +149,6 @@
         paragrafo.textContent = localStorage.getItem('valueAutor')
         var publi = document.querySelector('#public', + paragrafo)
         })
-
 
     </script>
 

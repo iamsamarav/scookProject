@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="doadorBloggerPost.css">
+    <link rel="icon" href="img/iconScook.png">
     <title>Scook</title>  
     
 </head>
@@ -39,8 +40,6 @@
                         <a class="submenu" href="Perfil.html">Configurações</a>
                         <a class="submenu" href="index.html">Sair da conta</a>
                     </div>
-
-
                 </div>
             </div>
 
@@ -51,17 +50,17 @@
             <div class="titulos">
                 <div class="bloco"> 
                     <label for="">Título da publicação:</label>
-                    <input class="setForm" type="text" value="" name="" id="inputText" placeholder="Digite seu título aqui">
+                    <input class="setForm" type="text" value="" id="inputText" placeholder="Digite seu título aqui">
                 </div>
 
                 <div class="bloco"> 
                     <label for="">Subtítulo:</label>
-                    <input class="setForm" type="text" value="" name="" id="inputSubText" placeholder="Digite seu subtítulo aqui">
+                    <input class="setForm" type="text" value="" id="inputSubText" placeholder="Digite seu subtítulo aqui">
                 </div>
 
                 <div class="bloco"> 
                     <label for="">Nome do Autor(a):</label>
-                    <input class="setForm" type="text" value="" id="inputAutor" name=""  placeholder="Digite seu nome completo">
+                    <input class="setForm" type="text" value="" id="inputAutor" placeholder="Digite seu nome completo">
                 </div>
 
             </div>
@@ -76,7 +75,6 @@
     </main>
 
     <footer>
-
         <div class="blocoUm">
 
             <div class="secao">
@@ -102,28 +100,21 @@
 
             <div class="secao">
                 <h4>Contato</h4>
-                <h4>Email@email.com</h4>
+                <h4>SiteScook_Oficial@gmail.com</h4>
             </div>
         </div>
 
         <div class="blocoDois">
-
             <div class="redeSocial">
 
                 <a class="link" href="">
-
                     <img src="img/icon-insta.png" alt="" class="instagram">
-
                 </a>
-
             </div>
 
             <div class="logoFrase">
-
                 <img class="logo" src="img/logoscook.png" alt="">
-
-                <h6 class="h6Footer">Juntos pela erradicação da má alimentação</h6>
-
+                <h6 class="h6Footer">Juntos pela erradicação da fome</h6>
             </div>
 
             <h5&copy id="scookFooter" >2022 Scook</h5>
@@ -133,30 +124,30 @@
     </footer>
 
     <script>
+        //Evento do botão "Exibir"
+        var text = document.querySelector('#inputText').value;
         var btn = document.querySelector('#inputButton');
 
-btn.addEventListener('click', function(){
-    var text = document.querySelector('#inputText').value;
-    localStorage.setItem('valueText', text);
+        btn.addEventListener('click', function(){
+        localStorage.setItem('valueText', text);
+        })
 
-})
+        //Eventos e Salvamentos dos dados dos input's
+        var text = document.querySelector('#inputSubText').value;
+        btn.addEventListener('click', function(){
+        localStorage.setItem('valorText', text);
+        })
 
-btn.addEventListener('click', function(){
-    var text = document.querySelector('#inputSubText').value;
-    localStorage.setItem('valorText', text);
+        var text = document.querySelector('#inputarea').value;
+        btn.addEventListener('click', function() {
+        localStorage.setItem('areaText', text)
+        })
 
-})
+        var text = document.querySelector('#inputAutor').value;
+        btn.addEventListener('click', function() {
+        localStorage.setItem('valueAutor', text)
+        })
 
-btn.addEventListener('click', function() {
-    var text = document.querySelector('#inputarea').value;
-    localStorage.setItem('areaText', text)
-})
-
-btn.addEventListener('click', function() {
-    var text = document.querySelector('#inputAutor').value;
-    localStorage.setItem('valueAutor', text)
-   
-})
     </script>
     
 </body>
